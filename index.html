@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="Learn about Budgetpedia">
+  	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
+  	<meta name="author" content="Budgetpedia">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="https://use.fontawesome.com/0385f622cd.js"></script>
+	<!-- <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+	<script type="text/javascript" src="https://code.highcharts.com/modules/data.js"></script> -->
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row padding-universal" id="site-header">
+			<div class="col-sm-12">
+					<div class="center vertical-center">
+						<span class="budgetpedia-logo">BUDGETPEDIA</span>
+						<h2 class="light-text">Supporting informed debate about the Toronto budget</h2> 
+					</div>
+			</div><!-- COLUMN END -->
+			<div class="col-sm-4 padded-top center">
+				<div id="box-1">
+					<span class="headline-numbers-1">2.6</span> <br>
+					<span class="number-description">MILLION <br> RESIDENTS</span>	
+				</div>
+			</div> <!-- COL END -->
+
+			<div class="col-sm-4 padded-top center padded-col-left">
+				<div id="box-2">
+					<span class="headline-numbers-2">$12</span><br>
+					<span class="number-description">BILLION <br>CITY BUDGET</span>	
+				</div>
+			</div> <!-- COL END -->
+			<div class="col-sm-4 padded-top center padded-col-left">
+				<div id="box-3">
+					<span class="headline-numbers-3">$330</span><br>
+					<span class="number-description">BILLION <br>GDP</span>
+				</div>
+			</div>
+		</div> <!-- ROW END -->
+
+		<!-- MENU -->
+		<div id="menu">
+			<ul class="h-list no-bullets">
+				<li>ABOUT</li>
+				<li>DATA STORIES</li>
+				<li>GET INVOLVED</li>
+			</ul>
+		</div>
+		
+		<div class="row padding-universal">
+			<div class="col-sm-12 padded-content-h">
+				<h1 class="center">WELCOME</h1>
+				<p>Budgetpedia helps demystify city budgets, walks you through the budget-setting process and identifies ways in which you as a resident can have a more <strong>active voice</strong> in deciding how the city spends its money. </p>
+
+				<p>We use simple, to-the-point charts and other interactive <strong>data visualizations</strong> designed to make budgets more accessible to all audiences at all levels of knowledge. Our goal is to make Budgetpedia a one-stop shop for the easy discovery of financial data on a wide variety of operations in City of Toronto. </p>
+			</div>
+		</div> <!-- ROW END -->
+
+		<div class="row padding-universal">
+			<div class="col-sm-12 padded-content-h">
+				<h1 class="center">DATA STORIES</h1>
+			</div>
+			<div class="col-sm-6 padded-content-h">
+				<p>Relevant data is often obscured within highly complex financial reports that are difficult to understand. Budgetpedia extracts the raw data from government disclosures and converts them into engaging data visualizations. </p>
+				
+				<p>Open data is a critical to increasing the transparency and accountability of local governments to its constituents. 
+				Budgetpedia's <strong>Data Stories</strong> provide helpful additional context designed to assist residents in making sense of the numbers and play a more active role in determining where funding goes. 
+				</p>
+			</div> <!-- COL END -->
+			<div class="col-sm-6 padded-top">
+				<div id="homepage-chart"></div>
+				<p class="small center"><em>Hover (or touch) data points to see actual amounts. Click the  <i class="fa fa-bars" aria-hidden="true"></i> icon for chart download options.</em></p>
+			</div> <!-- COL END -->
+		</div> <!-- ROW END -->
+
+		<div class="row padding-universal">
+			<div class="col-sm-12 padded-content-h">
+				<h1 class="center">BUDGETPEDIA EXPLORER</h1>
+				<p>The <strong>Data Explorer</strong> is a detailed visualization engine displaying on-demand budget data across various areas including transportation, social services, health and more. For advanced users in publicy policy, education and industry, Budgetpedia offers training on how to effectively use the Explorer to drive decision-making.</p><button class="center" href="" class="button button-shadow">START EXPLORING</button>
+			</div> <!-- COL END -->
+		</div> <!-- ROW END -->
+
+		<div class="row padding-universal">
+			<div class="col-sm-12 padded-content-h">
+				<h1 class="center">ABOUT US</h1>
+			</div> <!-- COL END -->
+			<div class="col-sm-6 padded-top">
+				<img src="img/CTTO-logo-sm.png" class="img-block img-responsive" alt="CivicTechTO logo">
+			</div> <!-- COL END -->
+			<div class="col-sm-6">
+				<p>Budgetpedia is a nonprofit organization borne out of CivicTechTO. The Budgetpedia team comprises civic action leaders, database and web developers with a common interest in leveraging open data to help inform residents regarding how budgets are set, and the impact that revenue and expense decisions have on the welfare of the people in the city. </p>
+				<p>To learn more about the team behind Budgetpedia and the methodology underpinning the data visualizations, <a href="about.html">click here</a></p>				
+			</div> <!-- COL END -->
+
+		</div> <!-- ROW END -->
+
+		<div class="row padding-universal" id="footer">
+			<div class="col-sm-4">
+				<h3>BUDGETPEDIA</h3>
+				<ul class="no-bullets">
+					<li>About Us</li>
+					<li>Data Stories</li>
+					<li>Announcements</li>
+					<li>Schedule a Demo</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h3>GET IN TOUCH</h3>
+				<ul class="no-bullets">
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Medium</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h3>GET INVOLVED</h3>
+				<ul class="no-bullets">
+					<li>Resources</li>
+					<li>Activist Pathways</li>
+					<li>Budget Roadmap</li>
+				</ul>
+			</div> <!-- COL END -->
+			<div class="col-sm-12">
+				<h4 class="center">Budgetpedia (C) 2017. All Rights Reserved.</h4>
+			</div>
+		</div> <!-- ROW END -->
+	</div> <!-- CONTAINER END -->
+	
+	<script src="js/highcharts.js"></script>
+	<script src="js/modules.js"></script>
+	<script src="js/exporting.js"></script>
+	<script>
+		$(function () { 
+		    var myChart = Highcharts.chart('homepage-chart', {
+		        // chart: {
+		        //     type: 'line'
+		        // },
+		        title: {
+		            text: 'Toronto Population',
+		            style:{
+		            	color: '#f1c40f'
+		            }
+		        },
+		        subtitle: {
+		                text: 'Source: Budgetpedia Data Explorer',
+		                style:{
+		                	color:'#EEE'
+		                }
+		            },
+		        style: {
+		                  color: "#EEE"
+		                },
+		        chart:{
+		        	backgroundColor: 'rgba(0,0,0,0)'
+		        },
+		        xAxis: {
+		            categories: ['1998','1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015', '2016', '2017'],
+		              lineWidth: 0,
+		              minorGridLineWidth: 0,
+		              lineColor: 'transparent',
+		              labels: {
+		                     style:{
+		                     	color: '#EEE',
+		                     	enabled: false
+		                     }
+		                 },
+	
+		        },
+		        yAxis: {
+		            title: {
+		                text: ''
+		            },
+		            labels:{
+		            	style: {color: '#EEE'}
+		            }
+		        },
+		        credits: {
+		            enabled: false
+		        },
+		        series: [{
+		            type: 'line',
+		            color: '#f1c40f',
+		            name: 'Population',
+		            data: [2536699, 2552548, 2568397, 2584246, 2604609, 2597099, 2593523, 2597295, 2609207, 2617600, 2632349, 2654359, 2676148, 2704622, 2741169, 2777211, 2804604, 2826498, 2842347, 2858196]
+		        }]
+		    });
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+.padding-universal {padding: 2% 10%;}
+
+body{
+	font-family:'Lato', sans-serif;
+	color: rgb(77,77,77);
+}
+
+/*TYPOGRAPHY*/
+/*.body-text{padding-top: 20px; color: rgb(77,77,77);}*/
+/*p.body-text{padding-bottom: 20px; color: rgb(77,77,77);}*/
+p{padding:1em 0; color: rgb(77,77,77);}
+p.small{font-size: 0.9em;}
+
+ul li{
+	font-size: 1.2em;
+}
+
+ul.no-bullets{
+	list-style: none;
+	padding-left: 0;
+}
+
+.budgetpedia-logo{
+	font-size: 3em;
+	font-weight: 300;
+}
+
+
+.page-title{font-size: 3em; font-weight: 300;}
+.number-description{font-weight:300; font-size:1.5em;}
+.headline{font-size: 2.8em; font-weight: 900;}
+.sub-headline{font-size: 2em; font-weight: 300; letter-spacing: .4em;}
+.headline-numbers{color: white;font-size: 2.5em; margin-bottom:2px;}
+.headline-numbers-1, .headline-numbers-2, .headline-numbers-3{color:#f1c40f ; font-size: 2.5em; margin-bottom:2px;} /*#eeff41*/
+
+.fa, .fa-bars{padding: 0 2px;}
+
+/*.headline-numbers-1{color: rgb(241, 196, 15);}
+.headline-numbers-2 {color: #eeff41;}
+.headline-numbers-3 {color: #ff9800;} */
+
+
+#box-1, #box-2, #box-3{
+	background: rgba(77,77,77,0.6);
+	text-align: center;
+	padding-top: 10%;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+
+.button, .button-sm, .button-lg{
+	font-family: 'Lato', Arial;
+	text-decoration: none;
+	/*border: 2px solid black;*/
+	/*color: white;*/
+	font-size: 1.2em;
+	/*position: relative;*/
+	color: rgb(77,77,77);
+	background: red;
+}
+
+.button-sm {
+	padding: 10px;
+}
+
+.button{
+	padding: 15px;
+}
+
+.button-lg{
+	padding: 22px;
+}
+
+.button-shadow{
+	box-shadow: -5px 5px #4C4646; /*SHADE: BLACK COW FROM http://www.computerhope.com/htmcolor.htm*/
+}
+
+h1, h2{font-family: 'Lato', sans-serif; font-weight: 900; color: black;}
+
+p, li{font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.3em;}
+
+.box{
+	border: 3px solid #4183D7;
+	float: left;
+	width: 220px;
+	height: 200px;
+	padding: 10px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.md-text{
+	font-size: 1.5em;
+}
+
+.img-circle{
+	border-radius: 100%;
+	width: 50%;
+}
+
+.img-icon{width:25px; margin-right: 5px}
+
+#site-header{
+	background: url('../img/header-img.jpg') no-repeat center center;
+	background-size: cover;
+	padding-bottom: 2%;
+	color: white;
+}
+
+#understanding-the-numbers{
+	background: url(../img/city-of-toronto-purple.jpg) no-repeat center center;
+	background-size: cover;
+	height: 60vh;
+	color: white !important;
+}
+
+#about-header{
+	background: #2c3e50;
+	height: 40vh;
+	color: white;
+}
+
+#footer{
+	background: #2c3e50;
+	color: white;
+}
+.center{text-align: center;}
+
+.page-title{padding-top: 7%;}
+
+.padded-top{padding-top:5%;}
+.padded-top-sm{padding-top:2%;}
+.padded-col-left{padding-left: 5%}
+.padded-content-h{padding:0 10%;}
+
+.marquee-text{font-size: 2.5em; padding-top: 1.3em;}
+.marquee-text-lg{font-size: 3em; padding-top: 1.3em;}
+.marquee-text-md{font-size: 2.2em; padding-top: 1.3em;}
+.marquee-text-sm{font-size: 2em; padding-top: 1.3em;}
+.marquee-text-xs{font-size: 1.8em; padding-top: 1.3em;}
+
+.number-blue{color:rgb(0,174,241);}
+.number-red{color:rgb(232,0,126);}
+
+
+.light-text{color:white;}
+.vertical-center{padding-top: 6%;}
+
+
+#menu{
+	color: white;
+	position: absolute;
+	top: 1%;
+	right: 1%;
+}
+
+.h-list>li{
+	display: inline;
+	padding: 8px;
+	border-bottom: solid 1px white;
+
+}
+.h-list>li:hover{
+	background: white;
+	color: black;
+	transition: 0.3s ease-in;
+}
+
+.list-spacing>li{
+	padding-bottom: 10px;
+}
+
+
+#homepage-chart{
+	background: url(../img/bg-img-chart.jpg) no-repeat center center;
+	background-size: cover;
+}
+/*#box-1{background: rgba(77,77,77,0.5);}*/
+/*#box-2{background: rgba(22, 160, 133,0.5);} 
+#box-3{background: rgba(52, 152, 219, 0.5);} */
