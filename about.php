@@ -2,28 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>About Budgetpedia</title>
+	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<meta name="description" content="Detailed information about Budgetpedia and its team">
+	<meta name="description" content="Learn about Budgetpedia">
   	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
-  	<meta name="author" content="Budgetpedia">
+  	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
+	<link rel="stylesheet" href="css/pushy.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/pushy.js"></script>
 </head>
 <body>
+	<div class="container-fluid" id="container-1">
+		<? include 'nav-menu.php' ?>
+	</div> <!-- CONTAINER-1 END -->
 	<div class="container-fluid">
 		<div class="row" id="about-header">
 			<div class="col-sm-12">
-				<span class="budgetpedia-logo">BUDGETPEDIA</span>
 				<div class="center vertical-center">
 					<span class="page-title">ABOUT <br>BUDGETPEDIA</span>
 				</div>
 			</div> <!-- COL-12 END -->
-<!-- 			<div class="col-sm-12 page-title">
-				<span class="headline">ABOUT US</span>	
-			</div> --> 
 		</div>	<!-- ROW END -->
 
 		<div class="row padding-universal">
@@ -48,14 +50,6 @@
 			</div>	<!-- COL END -->
 		</div> <!-- ROW END -->
 
-				<!-- MENU -->
-		<div id="menu">
-			<ul class="h-list no-bullets">
-				<li>ABOUT</li>
-				<li>DATA STORIES</li>
-				<li>GET INVOLVED</li>
-			</ul>
-		</div>
 		
 		<div class="row padding-universal">
 			<div class="col-sm-12 center">
@@ -65,35 +59,41 @@
 		
 			<div class="col-sm-4 center">
 				<img class="img-responsive img-circle center-block" src="img/team/henrik-bechmann.png" alt="Henrik Bechmann image">
-				<h3>Henrik Bechmann</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
+				<h3 class="position-name">Henrik Bechmann</h3>
+				<p class="position-title"><em><strong>Founder & Project Lead</strong></em></p>
+				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
 			</div> <!-- COL-END -->
 			<div class="col-sm-4 center">
 				<img class="img-responsive img-circle center-block" src="img/team/chris-graham.png" alt="Chris Graham image">
 				<h3>Chris Graham</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
+				<p class="position-title"><em><strong>Position Name</strong></em></p>
+				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
 			</div> <!-- COL-END -->
 			<div class="col-sm-4 center">
 				<img class="img-responsive img-circle center-block" src="img/team/rafi-chaudhury.jpg" alt="Rafi Chaudhury image">
 				<h3>Rafi Chaudhury</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
+				<p class="position-title"><em><strong>Project Manager & Web Developer</strong></em></p>
+				<p class="bio">Rafi writes the code for this website and coordinates organizational objectives for the Budgetpedia team. He is currently completing a Master of Accounting degree at York University.</p>
 			</div> <!-- COL-END -->
 		</div> <!-- ROW END -->
 		<div class="row padding-universal"> 
 			<div class="col-sm-4 center">
 				<img class="img-responsive img-circle center-block" src="img/team/sarah-shoker.png" alt="Sarah Shoker image">
 				<h3>Sarah Shoker</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
+				<p class="position-title"><em><strong>Position Name</strong></em></p>
+				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
 			</div> <!-- COL-END -->
 			<div class="col-sm-4 center">
 				<img class="img-responsive img-circle center-block" src="img/team/jim-rootham.png" alt="Jim Rootham image">
 				<h3>Jim Rootham</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
+				<p class="position-title"><em><strong>Position Name</strong></em></p>
+				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
 			</div> <!-- COL-END -->
 			<div class="col-sm-4 center">
 				<img class="img-responsive img-circle center-block" src="img/team/jermaine-.png" alt="Jermaine image">
 				<h3>Jermaine</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
+				<p class="position-title"><em><strong>Position Name</strong></em></p>
+				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
 			</div> <!-- COL-END -->
 		</div> <!-- ROW END -->
 
@@ -109,34 +109,7 @@
 		</div> <!-- ROW END -->
 
 		<div class="row padding-universal" id="footer">
-			<div class="col-sm-4">
-				<h3>BUDGETPEDIA</h3>
-				<ul class="no-bullets">
-					<li>About Us</li>
-					<li>Data Stories</li>
-					<li>Announcements</li>
-					<li>Schedule a Demo</li>
-				</ul>
-			</div>
-			<div class="col-sm-4">
-				<h3>GET IN TOUCH</h3>
-				<ul class="no-bullets">
-					<li>Facebook</li>
-					<li>Twitter</li>
-					<li>Medium</li>
-				</ul>
-			</div>
-			<div class="col-sm-4">
-				<h3>GET INVOLVED</h3>
-				<ul class="no-bullets">
-					<li>Resources</li>
-					<li>Activist Pathways</li>
-					<li>Budget Roadmap</li>
-				</ul>
-			</div> <!-- COL END -->
-			<div class="col-sm-12">
-				<h4 class="center">Budgetpedia (C) 2017. All Rights Reserved.</h4>
-			</div>
+			<? include 'footer.php' ?>
 		</div> <!-- ROW END -->
 	</div> <!-- CONTAINER END -->
 	

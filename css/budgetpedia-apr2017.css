@@ -1,3 +1,18 @@
+/*MOBILE*/
+@media only screen and (max-width: 768px){
+	body{overflow-x: hidden!important;}
+	.vertical-center{padding-top: 13% !important;}
+	.padded-col-left{padding-left: 0 !important;}
+	.padding-universal {padding: 2% 2% !important;}
+	.headline-data-story{font-size: 1.3em; font-weight: 900;}
+	.sub-headline-data-story {padding-top:10%;font-size: 1.1em !important; font-weight: 300; letter-spacing: .1em !important;}
+	#understanding-the-numbers{padding-top: 15%!important;}
+	.headline-numbers{text-align:left !important; font-size: 2em !important;}
+	.number-description{text-align: left !important;}
+	/*#container-1{position: absolute; top:0; left: -12px !important;}*/
+}
+
+
 .padding-universal {padding: 2% 10%;}
 
 body{
@@ -27,18 +42,39 @@ ul.no-bullets{
 
 
 .page-title{font-size: 3em; font-weight: 300;}
-.number-description{font-weight:300; font-size:1.5em;}
+.number-description{text-align:center; font-weight:300; font-size:1.5em;}
 .headline{font-size: 2.8em; font-weight: 900;}
+.headline-data-story{font-size: 2.5em; font-weight: 900;}
+
 .sub-headline{font-size: 2em; font-weight: 300; letter-spacing: .4em;}
-.headline-numbers{color: white;font-size: 2.5em; margin-bottom:2px;}
+.sub-headline-data-story {font-size: 2em; font-weight: 300; letter-spacing: .4em;}
+
+
+.headline-numbers{text-align: center; color: white;font-size: 2.5em; margin-bottom:2px;}
 .headline-numbers-1, .headline-numbers-2, .headline-numbers-3{color:#f1c40f ; font-size: 2.5em; margin-bottom:2px;} /*#eeff41*/
 
-.fa, .fa-bars{padding: 0 2px;}
+/*.fa, .fa-bars{padding: 0 2px;}*/
 
 /*.headline-numbers-1{color: rgb(241, 196, 15);}
 .headline-numbers-2 {color: #eeff41;}
 .headline-numbers-3 {color: #ff9800;} */
 
+blockquote{
+    margin-top: 3%;
+    font-size: 2em;
+    color: #000;
+    width: 35%;
+    background: #f1c40f;
+    /*text-align: left;*/
+    margin-right:15px;
+    padding: 15px;
+    /*border: none;*/
+}
+  .gap-left{margin-left: 20px;}
+
+.justify{
+    text-align: justify;
+}
 
 #box-1, #box-2, #box-3{
 	background: rgba(77,77,77,0.6);
@@ -49,15 +85,16 @@ ul.no-bullets{
 	border-radius: 100%;
 }
 
+
 .button, .button-sm, .button-lg{
 	font-family: 'Lato', Arial;
 	text-decoration: none;
-	/*border: 2px solid black;*/
-	/*color: white;*/
+	border: 4px solid #f1c40f;
+	color: rgb(77,77,77);
 	font-size: 1.2em;
 	/*position: relative;*/
-	color: rgb(77,77,77);
-	background: red;
+	/*background: #f1c40f;*/
+
 }
 
 .button-sm {
@@ -73,12 +110,24 @@ ul.no-bullets{
 }
 
 .button-shadow{
-	box-shadow: -5px 5px #4C4646; /*SHADE: BLACK COW FROM http://www.computerhope.com/htmcolor.htm*/
+	box-shadow: -5px 5px 5px #4C4646; /*SHADE: BLACK COW FROM http://www.computerhope.com/htmcolor.htm*/
+}
+
+.button:hover,.button-sm:hover, .button-lg:hover{
+	background: rgb(155, 89, 182);
+	transition: 0.2s ease-in;
+	text-decoration: none;
+	color: black;
+	background: #f1c40f;
 }
 
 h1, h2{font-family: 'Lato', sans-serif; font-weight: 900; color: black;}
 
 p, li{font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.3em;}
+
+h3.position-name{padding-bottom: 0;}
+p.position-title{font-size:1.2em; padding:5px 0;}
+p.bio {font-size: 1em;}
 
 .box{
 	border: 3px solid #4183D7;
@@ -99,8 +148,8 @@ p, li{font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.3em;}
 	border-radius: 100%;
 	width: 50%;
 }
-
-.img-icon{width:25px; margin-right: 5px}
+/*.img-sm{width:60%;}*/
+.img-icon{width:25px; margin-right: 5px;}
 
 #site-header{
 	background: url('../img/header-img.jpg') no-repeat center center;
@@ -112,7 +161,8 @@ p, li{font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.3em;}
 #understanding-the-numbers{
 	background: url(../img/city-of-toronto-purple.jpg) no-repeat center center;
 	background-size: cover;
-	height: 60vh;
+	padding-top: 10%;
+	padding-bottom: 5%;
 	color: white !important;
 }
 
@@ -132,8 +182,10 @@ p, li{font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.3em;}
 
 .padded-top{padding-top:5%;}
 .padded-top-sm{padding-top:2%;}
+.padded-top-md{padding-top:8%;}
 .padded-col-left{padding-left: 5%}
 .padded-content-h{padding:0 10%;}
+.padded-content-left{padding:0 0 0 10%;}
 
 .marquee-text{font-size: 2.5em; padding-top: 1.3em;}
 .marquee-text-lg{font-size: 3em; padding-top: 1.3em;}
@@ -172,11 +224,21 @@ p, li{font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.3em;}
 	padding-bottom: 10px;
 }
 
+input[type="radio"] {
+  margin-right: 5px;
+}
 
 #homepage-chart{
 	background: url(../img/bg-img-chart.jpg) no-repeat center center;
 	background-size: cover;
 }
+
+p.author{color: lightgray; font-size: 1em; padding: 1%;}
+
+/*.row-border{border-top: 2px solid #D91E53;}*/
+.menu-btn{color: white !important; font-size: 1.5em; padding: 1%; width: 100%;} /*background: rgba(0,0,0,0.7);*/
+
+#container-1{font-size: 1.5em; position: absolute; top:0; left: -15px; color: white; width:100%; z-index:9999;}
 /*#box-1{background: rgba(77,77,77,0.5);}*/
 /*#box-2{background: rgba(22, 160, 133,0.5);} 
 #box-3{background: rgba(52, 152, 219, 0.5);} */

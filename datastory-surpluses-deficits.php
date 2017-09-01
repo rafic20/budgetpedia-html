@@ -6,39 +6,42 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- <link rel="stylesheet" href="css/animate.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
-	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-			<script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
-			<script type="text/javascript" src="https://code.highcharts.com/modules/data.js"></script>
 	<title>Data Story: Toronto Emergency Services</title>
+	 <meta name="author" content="Rafi Chaudhury">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
+	<link rel="stylesheet" href="css/pushy.css">
+	<link rel="shortcut icon" href="img/budgetpedia-favicon.ico" type="image/x-icon">
+	<script src="js/pushy.js"></script>
 </head>
 <body>
+	<div class="container-fluid" id="container-1">
+		<? include 'nav-menu.php' ?>
+	</div> <!-- CONTAINER-1 END -->
 	<div class="container-fluid">
 			<div class="row" id="understanding-the-numbers">
-				<div class="col-sm-12">
-					<span class="budgetpedia-logo">BUDGETPEDIA</span>
-				</div>
-				<div class="col-sm-12 page-title">
-							<span class="sub-headline">CITY OF TORONTO</span><br>
-							<span class="headline">UNDERSTANDING THE NUMBERS</span>	
+				<div class="col-sm-12"> <!-- page-title -->
+							<span class="sub-headline-data-story">CITY OF TORONTO</span><br>
+							<span class="headline-data-story">DATA STORY</span>	
 				</div> <!-- COL END -->
-				<div class="col-sm-4 padded-top center">
-					<p class="headline-numbers">2,600,000</p> 
+				<div class="col-sm-4 padded-top">
+					<span class="headline-numbers">2,600,000</span><br>
 					<span class="number-description">RESIDENTS</span>
 				</div>
-				<div class="col-sm-4 padded-top center">
-					<p class="headline-numbers">690,000</p>
+				<div class="col-sm-4 padded-top">
+					<span class="headline-numbers">690,000</span><br>
 					<span class="number-description">FAMILIES</span>
 				</div>
-				<div class="col-sm-4 padded-top center">
-					<p class="headline-numbers">100+</p>
+				<div class="col-sm-4 padded-top">
+					<span class="headline-numbers">100+</span> <br>
 					<span class="number-description">LANGUAGES</span>
 				</div>
 			</div> <!-- ROW END -->
 			
 			<div class="row padding-universal">
-				<div class="col-sm-12 center">
-					<h1>STATEMENT OF OPERATIONS BACKGROUNDER</h1>
+				<div class="col-sm-12 center padded-content-h">
+					<h1>SURPLUSES & DEFICITS</h1>
 				</div> <!-- COL-12 END -->
 						<div class="col-sm-6 padded-top-sm">
 							<p class="body-text">
@@ -78,10 +81,10 @@
 			</div> <!-- ROW END -->
 
 			<div class="row padding-universal">
-						<div class="col-sm-12 center">
-							<h1>TORONTO'S HISTORICAL FINANCIAL BALANCE</h1>
-							<p>
-								Vivamus imperdiet ante non sem tempor placerat. Nullam efficitur, ligula fringilla feugiat venenatis, nulla ante vulputate velit, ut egestas ipsum arcu eu tellus. Quisque eleifend nisi sit amet nunc rutrum, vel maximus erat rutrum. Maecenas felis diam, tincidunt at sem ac, tincidunt pharetra ex.
+						<div class="col-sm-12">
+							<h1 class="center">THE HISTORICAL PICTURE</h1>
+							<p class="padded-content-h">
+								The chart below tracks city revenues and expenses since 1998. As of 2015, city revenues have almost doubled from the $6.3 billion recorded in 2000. 
 							</p>
 
 							<div id="chart"></div>
@@ -90,7 +93,10 @@
 			</div> <!-- ROW END -->
 
 			<div class="row padding-universal">
-						<div class="col-sm-6">
+						<div class="col-sm-12">
+							<p class="padded-content-h">
+								 Toronto has run sustained operating surpluses since 2009, when revenues reached $10.9 billion. The highest surplus recorded so far was $1.19 billion in 2015. 
+							</p>
 							<div id="bar-chart"></div>
 						</div> <!-- COL-6-END -->
 			</div> <!-- ROW END -->
@@ -99,46 +105,42 @@
 				<div class="col-sm-12">
 					<h1 class="center">REVENUES</h1>
 					<p class="center"><em>How the city finances operations</em></p>
-					
-					<p>Unlike a business, the City does not make the bulk of its money by selling goods and services. Taxes and funding transfers make up the majority of the funds used by the city to operate. The charts below show the largest revenue sources and their proportion relative to the total revenue base.</p>
+					<div class="padded-content-h">
+						<p>Unlike a business, the City does not make the bulk of its money by selling goods and services. Taxes and funding transfers make up the majority of the funds used by the city to operate. The charts below show the largest revenue sources and their proportion relative to the total revenue base.</p>
 
-					<p class="body-text">Hover over the bars (or touch the bars on mobile) to view the dollar amounts for each category.</p>
+						<p class="body-text">Hover over the bars (or touch the bars on mobile) to view the dollar amounts for each category.</p>
+							
+					</div>
 					
 				</div> <!-- COL 12 END -->
 				<div class="col-sm-12">
 					<div id="stackedBar"></div>
 				</div> <!-- COL-12 END -->
 				<div class="col-sm-12">
-					<p class="body-text">The <strong>User Charges</strong> category includes a number of sub-categories that generate fees for the City. This includes transportation services such as the Toronto Transit Commission. It also includes recreational and cultural services such as parks, golf courses and museums.</p>
-					
-					<p class="body-text">The "Other" category under includes revenues from the following sources: 
-						<ul>
-							<li>Government Business Enterprise Earnings</li>
-							<li>Investment Income</li>
-							<li>Development Charges</li>
-							<li>Rent and Concessions</li>
-							<li>Other expenses</li>
-						</ul>
-					</p>
+					<div class="padded-content-h">
+						<p class="body-text">The <strong>User Charges</strong> category includes a number of sub-categories that generate fees for the City. This includes transportation services such as the Toronto Transit Commission. It also includes recreational and cultural services such as parks, golf courses and museums.</p>
+						
+						<p class="body-text">The "Other" category under includes revenues from the following sources: 
+							<ul>
+								<li>Government Business Enterprise Earnings</li>
+								<li>Investment Income</li>
+								<li>Development Charges</li>
+								<li>Rent and Concessions</li>
+								<li>Other expenses</li>
+							</ul>
+						</p>
+					</div>
 				</div> <!-- COL END -->
-			</div>
+			</div> <!-- ROW END -->
 
-
-			<div class="row padding-universal">
-				<div class="col-sm-4">
-					
-				</div> <!-- COL END -->
-
-				<div class="col-sm-4">
-					
-				</div> <!-- COL END -->
-
-				<div class="col-sm-4">
-					
-				</div> <!-- COL END -->
+			<div class="row padding-universal" id="footer">
+				<? include 'footer.php' ?>
 			</div> <!-- ROW END -->
 	
 	</div> <!-- CONTAINER END -->
+	<script src="js/highcharts.js"></script>
+	<script src="js/modules.js"></script>
+	<script src="js/exporting.js"></script>
 <script>
 
         $(function () { 
@@ -147,7 +149,7 @@
                 //     type: 'line'
                 // },
                 title: {
-                    text: 'Toronto City Finance Snapshot ($millions)'
+                    text: 'Toronto City Finance Snapshot ($000s)'
                 },
                 xAxis: {
                     categories: ['1998','1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015']
@@ -179,7 +181,7 @@
         			type:'line',
         		},
         		title:{
-        			text:'Spending Balance (Budget/Deficit)'
+        			text:'Spending Balance (Surplus/Deficit)'
         		},
         		credits: {
         		    enabled: false
