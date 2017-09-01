@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container-fluid" id="container-1">
-		<? include 'nav-menu.php' ?>
+		<?php include 'nav-menu.php' ?>
 	</div> <!-- CONTAINER-1 END -->
 
 	<div class="container-fluid">
@@ -89,7 +89,7 @@
 			</div> <!-- COL END -->
 		</div> <!-- ROW END -->
 		<div class="row padding-universal" id="footer">
-			<? include 'footer.php' ?>
+			<?php include 'footer.php' ?>
 		</div> <!-- ROW END -->
 	</div> <!-- CONTAINER END -->
 </body>
