@@ -57,41 +57,39 @@
 				<p class="center">The Budgetpedia team at a glance</p>
 			</div> <!-- COL-END -->
 		
-			<div class="col-sm-4 center">
+			<div class="col-sm-4 center padded-top-sm">
 				<img class="img-responsive img-circle center-block" src="img/team/henrik-bechmann.png" alt="Henrik Bechmann image">
 				<h3 class="position-name">Henrik Bechmann</h3>
 				<p class="position-title"><em><strong>Founder & Project Lead</strong></em></p>
-				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
+				<a class="center" href="https://www.linkedin.com/in/henrikbechmann/?ppe=1"><img src="img/In-2C-28px-R.png" alt="LinkedIn"></a>
+				<p class="bio">Henrik Bechmann is a retired software developer with a passion for supporting community/civil service collaboration. His software development background was mostly corporate departmental database applications. In community action he has worked with food co-ops, neighbourhood safety, and acted as webmaster for a number of community websites. </p>
 			</div> <!-- COL-END -->
-			<div class="col-sm-4 center">
+
+			<div class="col-sm-4 center padded-top-sm">
+				<img class="img-responsive img-circle center-block" src="img/team/rafi-chaudhury.jpg" alt="Rafi Chaudhury image">
+				<h3>Rafi Chaudhury</h3>
+				<p class="position-title"><em><strong>Project Manager & Web Developer</strong></em></p>
+				<a class="center" href="https://www.linkedin.com/in/rafichaudhury/"><img src="img/In-2C-28px-R.png" alt="LinkedIn"></a>
+				<p class="bio">Rafi writes the code for this website and coordinates organizational objectives for the Budgetpedia team. He is currently completing a Master of Accounting degree at York University.</p>
+			</div> <!-- COL-END -->
+
+			<div class="col-sm-4 center padded-top-sm">
 				<img class="img-responsive img-circle center-block" src="img/team/chris-graham.png" alt="Chris Graham image">
 				<h3>Chris Graham</h3>
 				<p class="position-title"><em><strong>Position Name</strong></em></p>
 				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
 			</div> <!-- COL-END -->
-			<div class="col-sm-4 center">
-				<img class="img-responsive img-circle center-block" src="img/team/rafi-chaudhury.jpg" alt="Rafi Chaudhury image">
-				<h3>Rafi Chaudhury</h3>
-				<p class="position-title"><em><strong>Project Manager & Web Developer</strong></em></p>
-				<p class="bio">Rafi writes the code for this website and coordinates organizational objectives for the Budgetpedia team. He is currently completing a Master of Accounting degree at York University.</p>
-			</div> <!-- COL-END -->
 		</div> <!-- ROW END -->
 		<div class="row padding-universal"> 
-			<div class="col-sm-4 center">
+			<div class="col-sm-4 center padded-top-sm">
 				<img class="img-responsive img-circle center-block" src="img/team/sarah-shoker.png" alt="Sarah Shoker image">
 				<h3>Sarah Shoker</h3>
 				<p class="position-title"><em><strong>Position Name</strong></em></p>
 				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
 			</div> <!-- COL-END -->
-			<div class="col-sm-4 center">
+			<div class="col-sm-4 center padded-top-sm">
 				<img class="img-responsive img-circle center-block" src="img/team/jim-rootham.png" alt="Jim Rootham image">
 				<h3>Jim Rootham</h3>
-				<p class="position-title"><em><strong>Position Name</strong></em></p>
-				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
-			</div> <!-- COL-END -->
-			<div class="col-sm-4 center">
-				<img class="img-responsive img-circle center-block" src="img/team/jermaine-.png" alt="Jermaine image">
-				<h3>Jermaine</h3>
 				<p class="position-title"><em><strong>Position Name</strong></em></p>
 				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
 			</div> <!-- COL-END -->

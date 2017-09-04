@@ -9,6 +9,8 @@
 	#understanding-the-numbers{padding-top: 15%!important;}
 	.headline-numbers{text-align:left !important; font-size: 2em !important;}
 	.number-description{text-align: left !important;}
+	p.tiny-padding{padding-bottom: 3% !important; margin: 1% 0;}
+	/*#about-the-author{width: 95% !important;}*/
 	/*#container-1{position: absolute; top:0; left: -12px !important;}*/
 }
 
@@ -25,7 +27,11 @@ body{
 /*p.body-text{padding-bottom: 20px; color: rgb(77,77,77);}*/
 p{padding:1em 0; color: rgb(77,77,77);}
 p.small{font-size: 0.9em;}
-
+p.small-2{font-size: 1.1em;}
+p.tiny-padding{padding: 1% 0; margin: 1% 0;}
+p.author{color: lightgray; font-size: 1em; padding: 1%;}
+p.data-story-author{color: gray; font-size: 1.1em; padding: 1%;}
+p.data-citation{color: gray; font-size: 1em; padding: 0.5%; } 
 ul li{
 	font-size: 1.2em;
 }
@@ -176,6 +182,7 @@ p.bio {font-size: 1em;}
 	background: #2c3e50;
 	color: white;
 }
+a.footer-link, a.footer-link:visited{color: white !important;}
 .center{text-align: center;}
 
 .page-title{padding-top: 7%;}
@@ -184,6 +191,7 @@ p.bio {font-size: 1em;}
 .padded-top-sm{padding-top:2%;}
 .padded-top-md{padding-top:8%;}
 .padded-col-left{padding-left: 5%}
+.padded-col-right{padding-right: 5%}
 .padded-content-h{padding:0 10%;}
 .padded-content-left{padding:0 0 0 10%;}
 
@@ -233,9 +241,30 @@ input[type="radio"] {
 	background-size: cover;
 }
 
-p.author{color: lightgray; font-size: 1em; padding: 1%;}
-
 /*.row-border{border-top: 2px solid #D91E53;}*/
+.short-border-black:after{
+	content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid black;
+}
+
+#about-the-author{
+	/*width: 50%;*/
+	background: rgb(233,233,233);
+	padding: 3% 0;
+}
+
+.col-low-padding {
+   padding-right: 0 !important;
+   margin: 0 !important;
+}
+
+.author-name{text-transform: uppercase;}
+
 .menu-btn{color: white !important; font-size: 1.5em; padding: 1%; width: 100%;} /*background: rgba(0,0,0,0.7);*/
 
 #container-1{font-size: 1.5em; position: absolute; top:0; left: -15px; color: white; width:100%; z-index:9999;}

@@ -26,7 +26,7 @@
 							<span class="headline-data-story">DATA STORY</span>	
 				</div> <!-- COL END -->
 				<div class="col-sm-4 padded-top">
-					<span class="headline-numbers">2,600,000</span><br>
+					<span class="headline-numbers">2,615,000</span><br>
 					<span class="number-description">RESIDENTS</span>
 				</div>
 				<div class="col-sm-4 padded-top">
@@ -42,6 +42,9 @@
 			<div class="row padding-universal">
 				<div class="col-sm-12 center padded-content-h">
 					<h1>SURPLUSES & DEFICITS</h1>
+					<p class="center tiny-padding padded-content-h">How they're calculated and what they mean for you</p>
+					<p class="data-story-author">By Rafi Chaudhury, Budgetpedia Project Manager</p>
+					<div class="short-border-black"></div>
 				</div> <!-- COL-12 END -->
 						<div class="col-sm-6 padded-top-sm">
 							<p class="body-text">
@@ -77,19 +80,26 @@
 							<span class="marquee-text number-blue">$1.19</span> <br>
 							<span class="number-blue">billion in Surplus</span> <br><br>
 							2014: <span class="number-blue">$889 million surplus</span>
+
+							<em><p class="data-citation padded-content-h">Source: <a href="https://www1.toronto.ca/wps/portal/contentonly?vgnextoid=c13195932a5e6510VgnVCM10000071d60f89RCRD">City of Toronto website</a><br>
+							<a href="https://drive.google.com/open?id=0B208oCU9D8OuTHpNM2JLUllPN0E">(Backup Link)</a>
+							</p></em>
 					</div> <!-- COL-6 END -->
 			</div> <!-- ROW END -->
 
 			<div class="row padding-universal">
 						<div class="col-sm-12">
 							<h1 class="center">THE HISTORICAL PICTURE</h1>
+							<p class="center tiny-padding padded-content-h"><em>Trends since 1998</em></p>
+							<div class="short-border-black"></div>
+						</div> <!-- COL END -->
+						<div class="col-sm-12 padded-top-sm">
 							<p class="padded-content-h">
 								The chart below tracks city revenues and expenses since 1998. As of 2015, city revenues have almost doubled from the $6.3 billion recorded in 2000. 
 							</p>
 
 							<div id="chart"></div>
-						</div> <!-- COL-END -->
-						
+						</div> <!-- COL END -->
 			</div> <!-- ROW END -->
 
 			<div class="row padding-universal">
@@ -104,15 +114,17 @@
 			<div class="row padding-universal">
 				<div class="col-sm-12">
 					<h1 class="center">REVENUES</h1>
-					<p class="center"><em>How the city finances operations</em></p>
+					<p class="center tiny-padding padded-content-h"><em>How the city finances operations</em></p>
+					<div class="short-border-black"></div>
+				</div> <!-- COL END -->
+				<div class="col-sm-12">
 					<div class="padded-content-h">
 						<p>Unlike a business, the City does not make the bulk of its money by selling goods and services. Taxes and funding transfers make up the majority of the funds used by the city to operate. The charts below show the largest revenue sources and their proportion relative to the total revenue base.</p>
 
-						<p class="body-text">Hover over the bars (or touch the bars on mobile) to view the dollar amounts for each category.</p>
-							
+						<p class="body-text">Hover over the bars (or touch the bars on mobile) to view the dollar amounts for each category.</p>	
 					</div>
+				</div> <!-- COL END -->
 					
-				</div> <!-- COL 12 END -->
 				<div class="col-sm-12">
 					<div id="stackedBar"></div>
 				</div> <!-- COL-12 END -->
@@ -131,6 +143,26 @@
 						</p>
 					</div>
 				</div> <!-- COL END -->
+			</div> <!-- ROW END -->
+
+			<div class="row padding-universal">
+				<div class="col-sm-12">
+					<h1 class="center">EXPENSES</h1>
+					<p class="center tiny-padding padded-content-h"><em>What the money was spent on and how much</em></p>
+					<div class="short-border-black"></div>
+				</div> <!-- COL END -->
+				<div class="col-sm-12 padded-content-h">
+					<div class="body-text">
+						<p>Expenditures in 2015 totaled $10.83 billion, a 3% increase over the $10.46 billion spent in 2014. The largest expenditure categories were Transportation, Social and Family Services and Protection to Persons and Property, which comprised 62% of total expenditure. </p>
+					</div>
+				</div> <!-- COL END -->
+				<div class="col-sm-12">
+					<div id="expenses-chart"></div>
+				</div> <!-- COL END -->
+			</div> <!-- ROW END -->
+
+			<div class="row padding-universal padded-content-h" id="about-the-author">
+					<?php include 'authors/author-rafi.php' ?>
 			</div> <!-- ROW END -->
 
 			<div class="row padding-universal" id="footer">
@@ -251,6 +283,69 @@
             }]
         })
        });
+
+         $(function(){
+         	var expensesStackBar = Highcharts.chart('expenses-chart', {
+             chart: {
+                 type: 'bar'
+             },
+             title: {
+                 text: 'City Expense Categories, 2015 and 2014'
+             },
+             credits: {
+         		    enabled: false
+         	},
+             xAxis: {
+                 categories: ['2015 Expenses ($m)', '2014 Expenses ($m)']
+             },
+             yAxis: {
+                 min: 0,
+                 title: {
+                     text: 'Expenses ($ millions)'
+                 }
+             },
+             legend: {
+                 reversed: true
+             },
+             plotOptions: {
+                 series: {
+                     stacking: 'normal'
+                 }
+             },
+             series: [{
+                 name: 'Transportation',
+                 data: [2943.786, 2819.666]
+             }, {
+                 name: 'Social & Family Svcs',
+                 data: [2023.91, 1915.78]
+             }, {
+                 name: 'Protection to persons and property',
+                 data: [1807.909, 1820.074]
+             },{
+                 name: 'Recreation & Cultural Svcs',
+                 data: [989.349, 911.428]
+             },
+             {
+                 name: 'Environmental Svcs',
+                 data: [940.017, 919.204]
+             },
+             	{
+                 name: 'Social Housing',
+                 data: [775.45, 727.715]
+             },{
+                 name: 'General government',
+                 data: [747.196, 798.088]
+             },
+             	{
+                 name: 'Health Svcs',
+                 data: [452.389, 429.491]
+             },
+             	{
+                 name: 'Planning & Development',
+                 data: [146.102, 120.188]
+             }]
+         })
+        });
 
   </script>
 </body>

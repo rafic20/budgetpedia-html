@@ -57,16 +57,19 @@
 		
 		<div class="row padding-universal">
 			<div class="col-sm-12 padded-content-h">
-				<h1 class="center">WELCOME</h1>
 				<p>Budgetpedia helps demystify city budgets, walks you through the budget-setting process and identifies ways in which you as a resident can have a more <strong>active voice</strong> in deciding how the city spends its money. </p>
 
 				<p>We use simple, to-the-point charts and other interactive <strong>data visualizations</strong>  to make budgets more accessible to all audiences at all levels of knowledge. Our goal is to make Budgetpedia a one-stop shop for the easy discovery of financial data on a wide variety of operations in City of Toronto. </p>
-			</div>
+			</div> <!-- COL END -->
 		</div> <!-- ROW END -->
 
 		<div class="row padding-universal">
 			<div class="col-sm-12 padded-content-h">
 				<h1 class="center">THE BUDGET</h1>
+				<p class="center tiny-padding padded-content-h"><em>The Purpose and the Process</em>
+				<div class="short-border-black"></div>
+			</div> <!-- COL END -->
+			<div class="col-sm-12 padded-content-h">
 				<p>The Toronto budget is divided into <strong>operating</strong> and <strong>capital</strong> budgets. Operating budgets account for day-to-day costs of running services using available resources. The capital budgets account for costs of creating new assets, like community centres or roads. </p>
 
 				<p>The operating budget for 2017 was listed at <strong>$12.4 billion</strong>, which is over <strong>$4,300</strong> for every man, woman, and child in the City. The capital budget for the year was listed at over $3B. For the time being, Budgetpedia's current focus is on understanding the operating budget.</p> 
@@ -77,6 +80,8 @@
 		<div class="row padding-universal">
 			<div class="col-sm-12 padded-content-h">
 				<h1 class="center">DATA STORIES</h1>
+				<p class="center tiny-padding padded-content-h"><em>Putting the numbers into context</em></p>
+				<div class="short-border-black"></div>
 			</div>
 			<div class="col-sm-6 padded-content-h">
 				<p class="padded-top-md">Relevant data is often obscured within highly complex financial reports that are difficult to understand. Budgetpedia extracts the raw data from government disclosures and converts them into engaging data visualizations. </p>
@@ -111,7 +116,11 @@
 		<div class="row padding-universal">
 			<div class="col-sm-12 padded-content-h">
 				<h1 class="center">BUDGETPEDIA EXPLORER</h1>
-				<p>The <strong>Data Explorer</strong> is a detailed visualization engine displaying on-demand budget data across various areas including transportation, social services, health and more. For advanced users in publicy policy, education and industry, Budgetpedia offers training on how to effectively use the Explorer to drive decision-making.</p>
+				<p class="center tiny-padding padded-content-h"><em>Granular-level data visualization</em></p>
+				<div class="short-border-black"></div>
+			</div> <!-- COL END -->
+			<div class="col-sm-12 padded-content-h">
+				<p>The <strong>Data Explorer</strong> is a visualization engine displaying on-demand budget data across various areas including transportation, social services, health and more. For advanced users in publicy policy, education and industry, Budgetpedia offers training on how to effectively use the Explorer to drive decision-making.</p>
 
 				<a class="button button-shadow" href="http://budgetpedia.ca/explorer">DATA EXPLORER</a>
 			</div> <!-- COL END -->
@@ -120,6 +129,8 @@
 		<div class="row padding-universal">
 			<div class="col-sm-12 padded-content-h">
 				<h1 class="center">ABOUT US</h1>
+				<p class="center tiny-padding padded-content-h"><em>Budgetpedia's Mission, Vision and Values</em></p>
+				<div class="short-border-black"></div>
 			</div> <!-- COL END -->
 			<div class="col-sm-6 padded-top">
 				<img src="img/CTTO-logo-sm.png" class="img-block img-responsive" alt="CivicTechTO logo">

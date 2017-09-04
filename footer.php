@@ -1,17 +1,17 @@
 			<div class="col-sm-4">
 				<h3>BUDGETPEDIA</h3>
 				<ul class="no-bullets">
-					<li>About Us</li>
-					<li>Data Stories</li>
-					<li>Announcements</li>
-					<li>Schedule a Demo</li>
+					<li><a class="footer-link" href="about.php">About Us</a></li>
+					<li><a class="footer-link" href="#" class=""></a>Data Stories</li>
+					<li><a class="footer-link" href="#">Announcements</a></li>
+					<li><a class="footer-link" href="#">Schedule a Demo</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-4">
 				<h3>GET IN TOUCH</h3>
 				<ul class="no-bullets">
-					<li>Twitter</li>
-					<li>Medium</li>
+					<li><a class="footer-link" href="http://medium.com/budgetpedia">Twitter</a></li>
+					<li><a class="footer-link" href="http://twitter.com/budgetpedia">Medium</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-4">
@@ -24,5 +24,5 @@
 			</div> <!-- COL END -->
 			<div class="col-sm-12">
 				<h4 class="center">Budgetpedia &copy; <?php echo date("Y"); ?> .</h4>
-				<p class="center author"><em>Site Design: Rafi Chaudhury &copy; <?php echo date("Y"); ?>. All Rights Reserved.</em></p>
+				<p class="center author"><em>Site Design: Rafi Chaudhury &copy; <?php echo date("Y"); ?>.<br> All Rights Reserved.</em></p>
 			</div>
