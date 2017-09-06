@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" href="css/animate.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<title>Data Story: Toronto Emergency Services</title>
+	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
+	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
+	<title>Data Story: Budgets & Surpluses - Budgetpedia</title>
 	 <meta name="author" content="Rafi Chaudhury">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
@@ -103,10 +104,12 @@
 			</div> <!-- ROW END -->
 
 			<div class="row padding-universal">
-						<div class="col-sm-12">
+						<div class="col-sm-6 padded-top-md">
 							<p class="padded-content-h">
-								 Toronto has run sustained operating surpluses since 2009, when revenues reached $10.9 billion. The highest surplus recorded so far was $1.19 billion in 2015. 
+								 Toronto has run sustained operating surpluses since 2009, when revenues reached $10.9 billion. The highest surplus recorded so far was $1.19 billion in 2015. Operating surpluses are shown in <span style="color: rgb(124,181,236)">blue</span> and deficits are shown in <span style="color: red">red</span>.
 							</p>
+						</div> <!-- COL END -->
+						<div class="col-sm-6">
 							<div id="bar-chart"></div>
 						</div> <!-- COL-6-END -->
 			</div> <!-- ROW END -->
@@ -161,7 +164,39 @@
 				</div> <!-- COL END -->
 			</div> <!-- ROW END -->
 
-			<div class="row padding-universal padded-content-h" id="about-the-author">
+			<div class="row padding-universal">
+				<div class="col-sm-12">
+					<h1 class="center">IMPLICATIONS</h1>
+					<p class="center tiny-padding padded-content-h"><em>How are surpluses spent?</em></p>
+					<div class="short-border-black"></div>
+				</div> <!-- COL END -->
+				<div class="col-sm-7 padded-content-left">
+					<p>Toronto recorded an annual surplus of $1.19 billion in 2015 and has an <strong>accumulated surplus</strong> of $21.24 billion. Does that mean that $21 billion is available for spending on public services?</p>
+
+					<p>Not exactly. As per provincial law, Toronto is required to balance its budget, i.e. ensure that budgeted expenses in a financial year do not exceed budgeted revenues. In practice, this results in operating surpluses due to conservative budgeting practices. Of that surplus, 75% is allocated to spending on projects in the capital budget with the remainder allocated to city reserves to meet various other financial obligations.</p> 
+
+					<p>The accumulated surplus number is arrived at by first adding up the amounts that the city has invested in capital assets (such as land and buildings) and has in operating fund reserves and other types of reserves. Then, the total of expected future payouts and allocations related to the capital fund, mortgages and debt repayments are subtracted. The chart on the right displays how the numbers work out.</p>
+
+					<p>For 2015, $2.73 billion of the accumulated surplus is allocated to funding services in the operating budget. </p>
+				</div> <!-- COL END -->
+				<div class="col-sm-5 padded-top-md">
+					<div id="drilldown"></div>
+				</div> <!-- COL END -->
+			</div> <!-- ROW END -->
+
+			<!-- <div class="row padding-universal">
+				<div class="col-sm-12 padded-content-h">
+					<h2 class="center">FURTHER READING</h2>
+					<ul>
+						<li><a href="https://www1.toronto.ca/wps/portal/contentonly?vgnextoid=4e48a8c973efa410VgnVCM10000071d60f89RCRD&vgnextchannel=729c6cbd2b95a410VgnVCM10000071d60f89RCRD">Understanding the Toronto City Budget (City of Toronto)</a></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div> 
+			</div>  -->
+
+			<div class="row padding-universal" id="about-the-author">
 					<?php include 'authors/author-rafi.php' ?>
 			</div> <!-- ROW END -->
 
@@ -173,6 +208,7 @@
 	<script src="js/highcharts.js"></script>
 	<script src="js/modules.js"></script>
 	<script src="js/exporting.js"></script>
+	<script src="js/drilldown.js"></script>
 <script>
 
         $(function () { 
@@ -347,6 +383,103 @@
          })
         });
 
+        $(function () { 
+        	var myDrilldown = Highcharts.chart('drilldown', {
+        			    chart: {
+        			        type: 'column'
+        			    },
+        			    lang: {
+        			      decimalPoint: '.',
+        			      thousandsSep: ','
+        			    },
+        			    responsive: {
+        			      rules: [{
+        			        condition: {
+        			          maxWidth: 500
+        			        },
+        			        chartOptions: {
+        			          legend: {
+        			            enabled: false
+        			          }
+        			        }
+        			      }]
+        			    },
+        			    title: {
+        			        text: 'Accumulated Surplus: Where the money goes'
+        			    },
+        			    subtitle: {
+        			        text: 'Click the columns to view drilldowns. Source: Audited Financial Statements 2015, Note 17'
+        			    },
+        			    credits: {
+        			    	enabled: false
+        			    },
+        			    xAxis: {
+        			        type: 'category'
+        			    },
+        			    yAxis: {
+        			        title: {
+        			            text: 'Million $'
+        			        }
+
+        			    },
+        			    legend: {
+        			        enabled: false
+        			    },
+        			    exporting: { enabled: false },
+        			    plotOptions: {
+        			        series: {
+        			            borderWidth: 0,
+        			            dataLabels: {
+        			                // enabled: true,
+        			                // format: '{point.y:,.0f}',
+        			             pointPadding: 0,
+        			             groupPadding: 0.1,
+        			            },
+        			         // colors:['#4183D7','#548FDB','#679BDF','#7AA7E3','#8DB3E7','#A0BFEB','#B3CBEF','#C6D7F3']
+        			        }
+        			    },
+
+        			    series: [{
+        			        name: 'Allocations',
+        			        colorByPoint: true,
+        			        data: [{
+        			            name: 'Surplus Investments',
+        			            y: 30596,
+        			            drilldown: 'Surplus Investments'
+        			        },
+        			        {
+        			            name: 'Surplus Payouts',
+        			            y: -9353,
+        			            drilldown: 'Surplus Payouts'
+        			        }]
+        			    }],
+        			    drilldown: {
+        			        series: [{
+        			            name: 'Surplus Investments',
+        			            id: 'Surplus Investments',
+        			            negativeColor: 'red',
+        			            data: [
+        				                ['Tangible Capital Assets', 26965],
+        				                ['Operating Fund', 2735],
+        				                ['Reserve Fund', 1826],
+        				                ['Capital Fund', -930]
+        			            	] //end data property array
+        			        	},
+        			        	{
+        			            name: 'Surplus Payouts',
+        			            id: 'Surplus Payouts',
+        			            negativeColor: 'red',
+        			            data: [
+        				                ['Landfill Closure Liabilities', -142],
+        				                ['Other', -393],
+        				                ['Mortgages', -511],
+        				                ['Employee Benefits', -3599],
+        				                ['Net Long Term Debt', -4713]
+        			            ] //end data property array
+        			        }]//end series object array
+        			    }// end of drilldown property
+        			  });
+        			}); 
   </script>
 </body>
 </html>

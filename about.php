@@ -76,22 +76,22 @@
 			<div class="col-sm-4 center padded-top-sm">
 				<img class="img-responsive img-circle center-block" src="img/team/chris-graham.png" alt="Chris Graham image">
 				<h3>Chris Graham</h3>
-				<p class="position-title"><em><strong>Position Name</strong></em></p>
-				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
+				<p class="position-title"><em><strong>Product Champion</strong></em></p>
+				<p class="bio">Christopher Graham is our product champion, co-lead of our UX team, and is involved with research and project development.</p>
 			</div> <!-- COL-END -->
 		</div> <!-- ROW END -->
 		<div class="row padding-universal"> 
-			<div class="col-sm-4 center padded-top-sm">
+<!-- 			<div class="col-sm-4 center padded-top-sm">
 				<img class="img-responsive img-circle center-block" src="img/team/sarah-shoker.png" alt="Sarah Shoker image">
 				<h3>Sarah Shoker</h3>
 				<p class="position-title"><em><strong>Position Name</strong></em></p>
 				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
-			</div> <!-- COL-END -->
+			</div>  -->
 			<div class="col-sm-4 center padded-top-sm">
 				<img class="img-responsive img-circle center-block" src="img/team/jim-rootham.png" alt="Jim Rootham image">
 				<h3>Jim Rootham</h3>
 				<p class="position-title"><em><strong>Position Name</strong></em></p>
-				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
+				<p class="bio">Jim Rootham is a computer scientist, has taken on the challenge of reviewing the current codebase to prepare for the next development phase, and is co-lead of our software team.</p>
 			</div> <!-- COL-END -->
 		</div> <!-- ROW END -->
 
