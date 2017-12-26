@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	  <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+	<script src="https://code.highcharts.com/modules/treemap.js"></script>
+	<div id="container"></div>
+
+<script>
+Highcharts.chart('container', {
+    series: [{
+        type: "treemap",
+        layoutAlgorithm: 'squarified',
+        data: [{
+            name: 'A',
+            value: 6
+        }, {
+            name: 'B',
+            value: 6
+        }, {
+            name: 'C',
+            value: 4
+        }, {
+            name: 'D',
+            value: 3
+        }, {
+            name: 'E',
+            value: 2
+        }, {
+            name: 'F',
+            value: 2
+        }, {
+            name: 'G',
+            value: 1
+        }]
+    }],
+    title: {
+        text: 'Highcharts Treemap'
+    }
+});
+</script>
+</body>
+</html>

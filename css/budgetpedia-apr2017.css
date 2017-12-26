@@ -6,7 +6,7 @@
 	.padding-universal {padding: 2% 2% !important;}
 	.headline-data-story{font-size: 1.3em; font-weight: 900;}
 	.sub-headline-data-story {padding-top:10%;font-size: 1.1em !important; font-weight: 300; letter-spacing: .1em !important;}
-	#understanding-the-numbers{padding-top: 15%!important;}
+	#understanding-the-numbers, #city-staffing{padding-top: 15%!important;}
 	.headline-numbers{text-align:left !important; font-size: 2em !important;}
 	.number-description{text-align: left !important;}
 	p.tiny-padding{padding-bottom: 3% !important; margin: 1% 0;}
@@ -14,7 +14,7 @@
 	/*#container-1{position: absolute; top:0; left: -12px !important;}*/
 }
 
-
+.light-bttm-border{border-bottom: 2px solid black ;}
 .padding-universal {padding: 2% 10%;}
 .narrow-col-lg{width: 50%;}
 body{
@@ -32,7 +32,7 @@ p.tiny-padding{padding: 1% 0; margin: 1% 0;}
 p.author{color: lightgray; font-size: 1em; padding: 1%;}
 p.data-story-author{color: gray; font-size: 1.1em; padding: 1%;}
 p.data-citation{color: gray; font-size: 1em; padding: 0.5%; } 
-
+.navigation-tip-text {background-color: #F9BF3B!important; padding: 2px;}
 
 ul li{
 	font-size: 1.2em;
@@ -102,8 +102,8 @@ blockquote{
 	font-size: 1.2em;
 	/*position: relative;*/
 	/*background: #f1c40f;*/
-
 }
+
 
 .button-sm {
 	padding: 10px;
@@ -174,6 +174,15 @@ p.bio {font-size: 1em;}
 	color: white !important;
 }
 
+#city-staffing{
+	background: url(../img/toronto-city-hall-purple.jpg) no-repeat center center;
+	background-size: cover;
+	padding-top: 10%;
+	padding-bottom: 5%;
+	color: white !important;
+}
+
+
 #about-header{
 	background: #2c3e50;
 	height: 40vh;
@@ -197,6 +206,7 @@ a.footer-link, a.footer-link:visited{color: white !important;}
 .padded-col-right{padding-right: 5%;}
 .padded-content-h{padding:0 10%;}
 .padded-content-left{padding:0 0 0 10%;}
+.padded-bottom-md{padding-bottom: 5%}
 
 .marquee-text{font-size: 2.5em; padding-top: 1.3em;}
 .marquee-text-lg{font-size: 3em; padding-top: 1.3em;}
@@ -266,6 +276,7 @@ input[type="radio"] {
    margin: 0 !important;
 }
 ul.menu-font{font-size: 0.8em;}
+li.no-padding-left{padding-left: 0!important;}
 
 .author-name{text-transform: uppercase;}
 
@@ -274,3 +285,47 @@ ul.menu-font{font-size: 0.8em;}
 /*#box-1{background: rgba(77,77,77,0.5);}*/
 /*#box-2{background: rgba(22, 160, 133,0.5);} 
 #box-3{background: rgba(52, 152, 219, 0.5);} */
+
+td{padding-right:10px; padding-bottom: 3px;}
+
+/*TABLESORTER CSS*/
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 10pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(../themes/blue/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../themes/blue/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../themes/blue/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
