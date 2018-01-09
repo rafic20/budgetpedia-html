@@ -9,6 +9,6 @@
 <div class="col-sm-4">
 	<h3>ABOUT THE AUTHOR</h3>
 	<p class="tiny-padding small-2">
-		Rafi Chaudhury is the Project Manager at Budgetpedia, focusing on web development and data visualization UX. Prior to this role, Rafi was a Product Manager at <strong>FeelingBetterNow</strong>, where he was responsible for customer analytics development and testing. Rafi holds a Master of Science degree in Global Health from McMaster University and is currently studying for his CPA at York University's Schulich School of Business. 
+		Rafi Chaudhury is the Project Manager at Budgetpedia, focusing on web development and data visualization UX. Prior to this role, Rafi was a Product Manager at <strong>FeelingBetterNow</strong>, where he was responsible for customer analytics development and testing. Rafi holds a Master of Science degree in Global Health from McMaster University. 
 	</p>
 </div> <!-- COL END -->
