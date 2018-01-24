@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>About the Budget - Budgetpedia - Supporting informed debate about the Toronto budget</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	<meta name="description" content="Learn about the Toronto Budget">
+	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
+	<meta name="description" content="Learn about Budgetpedia">
   	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
-  	<meta name="author" content="Budgetpedia">
+  	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+	<link href="css/material.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
-	<link rel="stylesheet" href="css/pushy.css">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link rel="shortcut icon" href="img/budgetpedia-favicon.ico" type="image/x-icon">
-	<script src="js/pushy.js"></script>
+	   <!-- Material Design Lite -->
+	   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	   <!-- Material Design icon font -->
+	   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
-	<div class="container-fluid" id="container-1">
-		<?php include 'nav-menu.php' ?>
-	</div> <!-- CONTAINER-1 END -->
 
-	<div class="container-fluid">
+<body>
+	<? include 'nav-menu.php' ?>
+	    <div class="page-content"> <!-- CONTAINER-FLUID excluded -->
 		<div class="row" id="about-header">
 			<div class="col-sm-12">
 				<div class="center vertical-center">
@@ -31,14 +31,16 @@
 		</div>	<!-- ROW END -->
 		<div class="row padding-universal">
 			<div class="col-sm-12 padded-content-h justify">
-				<h2 class="center">BUDGET BASICS</h2>
-				<p><em>by Henrik Bechmann. Updated: August 26, 2017.</em></p>
+				<h2 class="center">A Backgrounder on the Toronto Budget</h2>
+				<p class="center"><em>by Henrik Bechmann. Updated: <strong>August 26, 2017</strong>.</em></p>
 				
-				<blockquote class="pull-right gap-left">
-					<em>“Don’t tell me where your priorities are. Show me where you spend your money and I’ll tell you what they are.”</em> <br>– <strong>James W. Frick</strong>
+				<blockquote class="blockquote">
+				    “Don’t tell me where your priorities are. Show me where you spend your money and I’ll tell you what they are.”
+				    <footer><cite title="Source Title">James W. Frick</cite></footer>
 				</blockquote>
+
 				<p>
-					The City of Toronto budget cycle is rather classic:</p>
+					The City of Toronto budget cycle is as follows:</p>
 				<ul>
 					<li>Create budget (May - February)</li>
 					<li>Spend money (January to December, overlapping the end of the budget cycle)</li>
@@ -92,5 +94,8 @@
 			<?php include 'footer.php' ?>
 		</div> <!-- ROW END -->
 	</div> <!-- CONTAINER END -->
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/propeller.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

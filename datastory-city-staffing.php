@@ -3,57 +3,58 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
-	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
-	<title>Data Story: City Staffing</title>
-	 <meta name="author" content="Rafi Chaudhury">
-	 <script type="text/javascript" src="js/jquery.tablesorter.js"></script> 
-	 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
+	<meta name="description" content="Learn about Budgetpedia">
+  	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
+  	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/material.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
-	<link rel="stylesheet" href="css/pushy.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link rel="shortcut icon" href="img/budgetpedia-favicon.ico" type="image/x-icon">
-	<script src="js/pushy.js"></script>
+	   <!-- Material Design Lite -->
+	   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	   <!-- Material Design icon font -->
+	   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
-	<div class="container-fluid" id="container-1">
-		<?php include 'nav-menu.php' ?>
-	</div> <!-- CONTAINER-1 END -->
-	<div class="container-fluid">
+	<? include 'nav-menu.php' ?>
+	    <div class="page-content"> <!-- CONTAINER-FLUID excluded -->
 			<div class="row" id="city-staffing">
 				<div class="col-sm-12"> <!-- page-title -->
-							<span class="sub-headline-data-story">CITY OF TORONTO</span><br>
+							<span class="sub-headline-data-story">CITY OF TORONTO</span><br><br>
 							<span class="headline-data-story">DATA STORY</span>	
 				</div> <!-- COL END -->
-				<div class="col-sm-4 padded-top">
-					<span class="headline-numbers">$5.5</span><br>
-					<span class="number-description">BILLION SALARY COSTS</span>
+				<div class="col-sm-4 padded-top padded-col-left-sm">
+						<span class="headline-numbers">$5.5</span><br>
+						<span class="number-description">BILLION SALARY COSTS</span>	
 				</div>
-				<div class="col-sm-4 padded-top">
+				<div class="col-sm-4 padded-top padded-col-left-sm">
 					<span class="headline-numbers">51,437</span><br>
 					<span class="number-description">EMPLOYEES</span>
 				</div>
-				<div class="col-sm-4 padded-top">
+				<div class="col-sm-4 padded-top padded-col-left-sm">
 					<span class="headline-numbers">51</span> <br>
 					<span class="number-description">OPERATING DIVISIONS</span>
 				</div>
 			</div> <!-- ROW END -->
+
 			<div class="row padding-universal">
-				<div class="col-sm-12 center padded-content-h">
-					<h1 class="center">THE CITY'S WORKFORCE</h1>
-					<p class="center tiny-padding padded-content-h">Staff Numbers and Salary Information for City of Toronto Employees</p>
-					<p class="data-story-author">By Rafi Chaudhury, Budgetpedia Project Manager</p>
-					<div class="short-border-black"></div>
+				<div class="col-sm-12">
+					<div class="heading_subheading_border heading-color">
+						<h1>The City's Workforce</h1>
+						<p>Staff Numbers and Salary Information for City of Toronto Employees</p>
+						<p><em>by <strong>Rafi Chaudhury</strong>, Budgetpedia Project Manager</em></p>
+					</div> <!-- HEADING END -->
 				</div> <!-- COL-12 END -->
 			</div> <!-- ROW END -->
 			
 
 			<div class="row padding-universal">
-
 				<div class="col-sm-12">
-					<p class="padded-content-h">
+					<p>
 						A total of <strong>51,437</strong> people worked for the City of Toronto across 51 operational divisions in 2017, according to Operating Budget Estimates. In that year, a total of <strong>$5.5 billion</strong> was spent in salaries and benefits for all City workers, making up 51% of total City Expenses.
 					</p>
 				</div> <!-- COL END -->
@@ -63,7 +64,7 @@
 					<div id="stacked-col"></div>	
 				</div> <!-- COL END -->
 				<div class="col-sm-12 padded-top-sm">
-					<p class="padded-content-h">
+					<p>
 						Information about staff numbers are usually excluded from the City's consolidated financial statements, appearing instead as disclosures and analyst note documents in the annual Operating Budget cycle. An example of a disclosure from the 2017 Operating Budget cycle can be found <a href="http://www.toronto.ca/legdocs/mmis/2017/ex/bgrd/backgroundfile-100667.pdf">here</a>.
 					</p>
 				</div> <!-- COL END -->
@@ -71,15 +72,16 @@
 
 			<div class="row padding-universal">
 				<div class="col-sm-12">
-					<h1 class="center">STAFF COUNT</h1>
-					<p class="center tiny-padding padded-content-h"><em>How many are employed at individual divisions?</em></p>
-					<div class="short-border-black"></div>
+					<div class="heading_subheading_border heading-color">
+						<h2>Staff Count</h2>
+						<p>How many are employed at individual divisions?</p>
+					</div> <!-- HEADING END -->
 				</div> <!-- COL END -->
 				<div class="col-sm-12 padded-top-sm">
-					<p class="padded-content-h">
+					<p>
 						The Toronto Transit Commission comprises the largest of the 51 divisions with <strong>14,005</strong> employees. The Toronto Police Service is second-largest at <strong>7,881</strong>. In all, there are 12 divisions with over 1,000 employees. The table below can be sorted alphabetically and from largest to smallest.</p>
 				</div>
-				<div class="col-sm-12 padded-content-h">
+				<div class="col-sm-12">
 						<table id="staff-numbers-table" class="tablesorter">
 							<thead><tr class="tableizer-firstrow"><th>Division Name</th><th>2017</th><th>2016</th><th>2015</th><th>2014</th></tr></thead><tbody>
 							 <tr><td>311 Toronto</td><td>173</td><td>145</td><td>157</td><td>158</td></tr>
@@ -91,7 +93,7 @@
 							</tbody>
 						</table>
 					<div class="padded-top">
-							<a class="button button-shadow" data-toggle="modal" data-target="#staffSizeModal">VIEW FULL TABLE</a>	
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-toggle="modal" data-target="#staffSizeModal">FULL TABLE</button>	
 						</div>
 					</div> <!-- COL END -->
 				</div>
@@ -170,18 +172,18 @@
 
 			<div class="row padding-universal">
 				<div class="col-sm-12">
-					<h1 class="center">AVERAGE STAFF SALARIES</h1>
-					<p class="center tiny-padding padded-content-h"><em>Estimating employee remuneration</em></p>
-					<div class="short-border-black"></div>
+					<div class="heading_subheading_border heading-color">
+						<h2>Average Staff Salaries</h2>
+						<p>Estimating Employee Remuneration</p>
+					</div> <!-- HEADING END -->
 				</div> <!-- COL END -->
 				<div class="col-sm-12 padded-top-sm">
-					<p class="padded-content-h">
+					<p>
 						The chart below shows the staff counts and average salaries at the 10 largest operating divisions in the City of Toronto. The size of individual circles is a proportional representation of the number of the employees in that division. </p>
 				</div> <!-- COL END -->
-				<div class="col-sm-4 col-sm-offset-4">
-					<div class="navigation-tip-text">
-						<p class="center"><strong>TIP</strong>: <em>Tap the individual circles or hover over them to view staff numbers and dollar figures.</em></p>	
-					</div>
+				<div class="col-sm-4">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">TIP</button>
+						<p class="padded-top-sm">Tap the individual circles or hover over them to view staff numbers and dollar figures.</p>		
 				</div>
 			</div> <!-- ROW END -->
 
@@ -194,8 +196,8 @@
 					<p class="padded-content-h">The City  does not disclose salaries of individual City employees making over a certain amount in salaries. The province of Ontario however does <a href="https://www.ontario.ca/page/public-sector-salary-disclosure-2016-all-sectors-and-seconded-employees
 					">disclose</a> information on provincial employees making over $100,000 annually as part of the <em>Public Salary Disclosure Act</em>.</p>
 				</div> <!-- COL END -->
-				<div class="col-sm-12 padded-content-h">
-					<h3 class="center">Total Salary Expenses ($000s)</h3>
+				<div class="col-sm-12">
+					<h4 class="center">Total Salary Expenses ($000s)</h4>
 					<table id="division-size-table" class="tablesorter">
 						<thead><tr class="tableizer-firstrow"><th>Operating Division</th><th>2017</th><th>2016</th><th>2015</th><th>2014</th></tr></thead><tbody>
 						 <tr><td>311 Toronto</td><td>15,956</td><td>15,413</td><td>15,372</td><td>15,915</td></tr>
@@ -208,7 +210,7 @@
 						</tbody>
 					</table> <!-- TABLE END -->
 					<div class="padded-top">
-						<a class="button button-shadow" data-toggle="modal" data-target="#myModal">VIEW FULL TABLE</a>	
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-toggle="modal" data-target="#myModal">FULL TABLE</button>		
 					</div>
 				</div> <!-- COL END -->
 			</div> <!-- ROW END -->
@@ -287,39 +289,45 @@
 
 			<div class="row padding-universal">
 				<div class="col-sm-12">
-					<h1 class="center">SALARIES BY FUNCTION</h1>
+					<div class="heading_subheading_border heading-color">
+						<h2>Salaries by Function</h2>
+					</div> <!-- HEADING END -->
 				</div>
 				<div class="col-sm-4 padded-top-sm">
 					<p>For some city divisions, the totals spent on salaries are disclosed as components of an operating function. The treemap on the right displays the breakdown for Toronto Paramedic Services. No such breakdown is available, say for Toronto Police Services however; the budgeted total salary expense for 2017 were reported only as a single value of <strong>$1,006,149,800</strong>.</p>
-
-					<div class="navigation-tip-text">
-						<p class="center"><strong>TIP</strong>: <em>Tap/hover over the blocks to see the dollar figures .</em></p>	
-					</div>
+					
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">TIP</button>
+						<p class="padded-top-sm">Tap/hover over the blocks to see the dollar figures	</p>
 				</div><!-- COL END -->
 				<div class="col-sm-8 padded-top-sm">
-					<div id="container"></div>
+					<div> <!-- id="container" --> 
+						<script async src="//jsfiddle.net/rchaudhury/9u5j04sg/embed/result/"></script>
+					</div>
 				</div><!-- COL END -->
 			</div><!-- ROW END -->
 
 			<div class="row padding-universal">
-				<div class="col-sm-4 padded-top-sm">
+				<div class="col-sm-4 padded-top-md">
 					<p>Toronto Water is another city division that provides salary expense breakdowns by activity. However, without knowing the number of employees assigned to these activity areas, it is not possible to derive anything more than a broad average for the entire city division. 
 				</div><!-- COL END -->
 				<div class="col-sm-8 padded-top-sm">
-					<div id="treemap-toronto-water"></div>
+					<div> <!-- id="treemap-toronto-water" --> 
+						<script async src="//jsfiddle.net/rchaudhury/b1bvyc62/embed/result/"></script>
+					</div>
 				</div><!-- COL END -->
 			</div><!-- ROW END -->
 			
 			<div class="row padding-universal">
 				<div class="col-sm-12">
-					<h1 class="center">TAKEAWAYS</h1>
-					<p class="center tiny-padding padded-content-h"><em>Improving Quality of Disclosures</em></p>
-					<div class="short-border-black"></div>
+					<div class="heading_subheading_border heading-color">
+						<h2>Takeaways</h2>
+						<p>Improving Quality of Disclosures</p>
+					</div> <!-- HEADING END -->
 
-					<p class="padded-content-h">
+					<p class="padded-top-sm">
 						The availability of detailed information about municipal operations is key to helping Toronto residents understand how the city allocates and remunerates human resources across different functional areas . This data story attempts to translate the current status of disclosures into a broader understanding of staffing and remuneration and identify gaps in the available data. Some caveats of the above analysis include:</p>
-					
-					<p class="padded-content-h">
+				
+					<p>
 							The data sources include budgeted estimates approved by the City Council. The actual numbers for salaries are shown as lump sums in the audited annual reports, and thus the variance from the budgeted amounts is not easily calculated. Additionally, the available salary information is shown as gross amounts and include the value of benefits. As benefits vary widely according to staff seniority, salary range, unionization status and other factors, the estimates for average salary should be taken with caution.
 					</p>
 				</div> <!-- COL END -->
@@ -334,12 +342,16 @@
 			</div> <!-- ROW END -->
 	
 	</div> <!-- CONTAINER END -->
-	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="js/material.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/highcharts.js"></script>
 	<script src="js/highcharts-more.js"></script>
+	<script src="js/treemap.js"></script>
 	<script src="js/modules.js"></script>
 	<script src="js/exporting.js"></script>
-	<script src="https://code.highcharts.com/modules/treemap.js"></script>
-	<!-- <script src="https://code.highcharts.com/modules/heatmap.js"></script> -->
+	
 
 	<script> 
 	// SORTABLE TABLE
@@ -569,96 +581,91 @@
 
 		// TREEMAP 1
 
-			$(function () { 
-				var treeMap = Highcharts.chart('container', {
-			    series: [{
-			        type: "treemap",
-			        layoutAlgorithm: 'squarified',
-			        data: [{
-			            name: 'Pre-Hospital Emergency Care',
-			            value: 147638266,
-			            color: '#4ECDC4'
-			        }, {
-			            name: 'Emergency Medical Dispatch & Preliminary Care',
-			            value: 21797640,
-			            color: '#A2DED0'
-			        }, {
-			            name: 'Critical Care Transport',
-			            value: 3666469,
-			            color: '#87D37C'
-			        }, {
-			            name: 'City Emergency & Major Event Mass Casualty Care',
-			            value: 1328680,
-			            color: '#90C695'
-			        }, {
-			            name: 'Community Healthcare Outreach & Referral',
-			            value: 543843,
-			            color: '#03C9A9'
-			        }, {
-			            name: 'Citizen First Response Education',
-			            value: 895553,
-			           	color: '#C8F7C5'
-			        }]
-			    }],
-			    labels: {
-			        format: '$ {value:,.1f}'
-			    },
-			    title: {
-			        text: 'Toronto Paramedic Services Total Salaries'
-			    },
-			    credits: {
-			        enabled: false
-			    }
-			})
-		});
+		// 	$(function () { 
+		// 		var treeMap = Highcharts.chart('container', {
+		// 	    series: [{
+		// 	        type: "treemap",
+		// 	        layoutAlgorithm: 'squarified',
+		// 	        data: [{
+		// 	            name: 'Pre-Hospital Emergency Care',
+		// 	            value: 147638266,
+		// 	            color: '#4ECDC4'
+		// 	        }, {
+		// 	            name: 'Emergency Medical Dispatch & Preliminary Care',
+		// 	            value: 21797640,
+		// 	            color: '#A2DED0'
+		// 	        }, {
+		// 	            name: 'Critical Care Transport',
+		// 	            value: 3666469,
+		// 	            color: '#87D37C'
+		// 	        }, {
+		// 	            name: 'City Emergency & Major Event Mass Casualty Care',
+		// 	            value: 1328680,
+		// 	            color: '#90C695'
+		// 	        }, {
+		// 	            name: 'Community Healthcare Outreach & Referral',
+		// 	            value: 543843,
+		// 	            color: '#03C9A9'
+		// 	        }, {
+		// 	            name: 'Citizen First Response Education',
+		// 	            value: 895553,
+		// 	           	color: '#C8F7C5'
+		// 	        }]
+		// 	    }],
+		// 	    labels: {
+		// 	        format: '$ {value:,.1f}'
+		// 	    },
+		// 	    title: {
+		// 	        text: 'Toronto Paramedic Services Total Salaries'
+		// 	    },
+		// 	    credits: {
+		// 	        enabled: false
+		// 	    }
+		// 	})
+		// });
 
-		// 
-			$(function () { 
-				var treeMap2 = Highcharts.chart('treemap-toronto-water', {
-			    series: [{
-			        type: "treemap",
-			        layoutAlgorithm: 'squarified',
-			        data: [{
-			            name: 'Stormwater Collection',
-			            value: 10754393,
-			            color: '#F27935'
-			        }, {
-			            name: 'Stormwater Treatment',
-			            value: 3536761,
-			            color: '#F39C12'
-			        }, {
-			            name: 'Wastewater Collection',
-			            value: 29970592,
-			            color: '#F9690E'
-			        }, {
-			            name: 'Wastewater Treatment',
-			            value: 56336026,
-			            color: '#FDE3A7'
-			        }, {
-			            name: 'Water Distribution',
-			            value: 44842602,
-			            color: '#FABE58'
-			        }, {
-			            name: 'Water Treatment',
-			            value: 29479430,
-			            color: '#F5AB35'
-			        }]
-			    }],
-			    labels: {
-			        format: '$ {value:,.1f}'
-			    },
-			    title: {
-			        text: 'Toronto Water Salary Expenses by Operations'
-			    },
-			    credits: {
-			        enabled: false
-			    }
-			})
-		});
+		// // 
+		// 	$(function () { 
+		// 		var treeMap2 = Highcharts.chart('treemap-toronto-water', {
+		// 	    series: [{
+		// 	        type: "treemap",
+		// 	        layoutAlgorithm: 'squarified',
+		// 	        data: [{
+		// 	            name: 'Stormwater Collection',
+		// 	            value: 10754393,
+		// 	            color: '#F27935'
+		// 	        }, {
+		// 	            name: 'Stormwater Treatment',
+		// 	            value: 3536761,
+		// 	            color: '#F39C12'
+		// 	        }, {
+		// 	            name: 'Wastewater Collection',
+		// 	            value: 29970592,
+		// 	            color: '#F9690E'
+		// 	        }, {
+		// 	            name: 'Wastewater Treatment',
+		// 	            value: 56336026,
+		// 	            color: '#FDE3A7'
+		// 	        }, {
+		// 	            name: 'Water Distribution',
+		// 	            value: 44842602,
+		// 	            color: '#FABE58'
+		// 	        }, {
+		// 	            name: 'Water Treatment',
+		// 	            value: 29479430,
+		// 	            color: '#F5AB35'
+		// 	        }]
+		// 	    }],
+		// 	    labels: {
+		// 	        format: '$ {value:,.1f}'
+		// 	    },
+		// 	    title: {
+		// 	        text: 'Toronto Water Salary Expenses by Operations'
+		// 	    },
+		// 	    credits: {
+		// 	        enabled: false
+		// 	    }
+		// 	})
+		// });
 	</script>
-<script>
-
-</script>
-
-
 </body>

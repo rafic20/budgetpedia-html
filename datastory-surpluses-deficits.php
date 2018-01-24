@@ -3,198 +3,217 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
+	<meta name="description" content="Learn about Budgetpedia">
+  	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
+  	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
-	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
-	<title>Data Story: Budgets & Surpluses - Budgetpedia</title>
-	 <meta name="author" content="Rafi Chaudhury">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/material.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
-	<link rel="stylesheet" href="css/pushy.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link rel="shortcut icon" href="img/budgetpedia-favicon.ico" type="image/x-icon">
-	<script src="js/pushy.js"></script>
+	   <!-- Material Design Lite -->
+	   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	   <!-- Material Design icon font -->
+	   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
-	<div class="container-fluid" id="container-1">
-		<?php include 'nav-menu.php' ?>
-	</div> <!-- CONTAINER-1 END -->
-	<div class="container-fluid">
+	<? include 'nav-menu.php' ?>
+	    <div class="page-content"> <!-- CONTAINER-FLUID excluded -->
 			<div class="row" id="understanding-the-numbers">
 				<div class="col-sm-12"> <!-- page-title -->
-							<span class="sub-headline-data-story">CITY OF TORONTO</span><br>
+							<span class="sub-headline-data-story">CITY OF TORONTO</span><br><br>
 							<span class="headline-data-story">DATA STORY</span>	
 				</div> <!-- COL END -->
-				<div class="col-sm-4 padded-top">
-					<span class="headline-numbers">2,615,000</span><br>
-					<span class="number-description">RESIDENTS</span>
+				<div class="col-sm-4 padded-top padded-col-left-sm">
+						<span class="headline-numbers">2,615,000</span><br>
+						<span class="number-description">RESIDENTS</span>	
 				</div>
-				<div class="col-sm-4 padded-top">
+				<div class="col-sm-4 padded-top padded-col-left-sm">
 					<span class="headline-numbers">690,000</span><br>
 					<span class="number-description">FAMILIES</span>
 				</div>
-				<div class="col-sm-4 padded-top">
+				<div class="col-sm-4 padded-top padded-col-left-sm">
 					<span class="headline-numbers">100+</span> <br>
 					<span class="number-description">LANGUAGES</span>
 				</div>
 			</div> <!-- ROW END -->
 			
 			<div class="row padding-universal">
-				<div class="col-sm-12 center padded-content-h">
-					<h1>SURPLUSES & DEFICITS</h1>
-					<p class="center tiny-padding padded-content-h">How they're calculated and what they mean for you</p>
-					<p class="data-story-author">By Rafi Chaudhury, Budgetpedia Project Manager</p>
-					<div class="short-border-black"></div>
+				<div class="col-sm-12">
+					<div class="heading_subheading_border heading-color">
+						<h1>Surpluses & Deficits</h1>
+						<p>How they're calculated and what they mean for you</p>
+						<p><em>by <strong>Rafi Chaudhury</strong>, Budgetpedia Project Manager</em></p>
+					</div> <!-- HEADING END -->
 				</div> <!-- COL-12 END -->
-						<div class="col-sm-6 padded-top-sm">
-							<p class="body-text">
-								In order to better understand how the city makes and spends money, let's take a quick tour of the City of Toronto's audited statement of operations for the year ending <strong>December 31, 2015</strong>. </p>
+				<div class="col-sm-6 padded-top-sm">
+					<p>
+						In order to better understand how the city makes and spends money, let's take a quick tour of the City of Toronto's audited Statement of Operations for the year ending <strong>December 31, 2015</strong>. </p>
 
-							<p class="body-text">
-								At its simplest level, the annual financial statement represents Toronto's revenues and expenses and shows whether there was a surplus for the year, where revenues exceed expenses, or a deficit, where expenses exceed revenues. 
-							</p>
-							<p class="body-text">
-								In 2015, revenues were higher than expenses, resulting in a surplus of $1.19 billion. According to City policy, 75% of this surplus ($893 million) will be allocated to infrastructure projects within the capital budget. The remaining 25% ($298 million) will be allocated to top up reserves to meet financial obligations. 
-							</p>
-						</div> <!-- COL-6 END -->
+					<p>
+						At its simplest level, the annual financial statement shows whether there was a surplus for the year, in which revenues exceeded expenses, or a deficit, in which expenses exceeded revenues. 
+					</p>
+					<p>
+						In 2015, revenues were higher than expenses, resulting in a surplus of <strong>$1.19 billion</strong>. According to City policy, 75% of this surplus ($893 million) will be allocated to infrastructure projects within the capital budget. The remaining 25% ($298 million) will be allocated to top up reserves to meet financial obligations. 
+					</p>
+				</div> <!-- COL-6 END -->
 					
-					<div class="col-sm-6 center padded-top-sm">
-							<span class="marquee-text number-blue">$12.02</span><br>
-							<span class="number-blue">billion in Revenue</span> 
-
-							<br>
-
-							<span class="marquee-text"> - </span>
-							
-							<br>
-
-							<span class="marquee-text number-red">$10.82</span> <br>
-							<span class="number-red">billion in Expenses</span>
-
-							
-							<br>
-
-							<span class="marquee-text"> = </span>
-							
-							<br>	
-							<span class="marquee-text number-blue">$1.19</span> <br>
-							<span class="number-blue">billion in Surplus</span> <br><br>
-							2014: <span class="number-blue">$889 million surplus</span>
-
-							<em><p class="data-citation padded-content-h">Source: <a href="https://www1.toronto.ca/wps/portal/contentonly?vgnextoid=c13195932a5e6510VgnVCM10000071d60f89RCRD">City of Toronto website</a><br>
-							<a href="https://drive.google.com/open?id=0B208oCU9D8OuTHpNM2JLUllPN0E">(Backup Link)</a>
-							</p></em>
+					<div class="col-sm-6 padded-top-sm">
+						<!-- MDL Square card -->
+						<div class="demo-card-square mdl-card mdl-shadow--2dp">
+						  <div class="mdl-card__title mdl-card--expand" id="surplus-calculation">
+						    <span class="mdl-card__title-text">
+						    	<h2 class="marquee-text">$1.19 Billion</h2>
+						    	<br><br>
+						    </span>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						    Toronto's 2015 Operating Surplus. In 2014, the reported surplus was <strong>$889 million</strong>. 
+						    						        	<br><br>
+						    						        	<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://www1.toronto.ca/wps/portal/contentonly?vgnextoid=c13195932a5e6510VgnVCM10000071d60f89RCRD">SOURCE</a>
+						  </div>
+						</div>  <!-- DEMO CARD END -->
 					</div> <!-- COL-6 END -->
 			</div> <!-- ROW END -->
 
 			<div class="row padding-universal">
-						<div class="col-sm-12">
-							<h1 class="center">THE HISTORICAL PICTURE</h1>
-							<p class="center tiny-padding padded-content-h"><em>Trends since 1998</em></p>
-							<div class="short-border-black"></div>
-						</div> <!-- COL END -->
-						<div class="col-sm-12 padded-top-sm">
-							<p class="padded-content-h">
-								The chart below tracks city revenues and expenses since 1998. As of 2015, city revenues have almost doubled from the $6.3 billion recorded in 2000. 
-							</p>
-
-							<div id="chart"></div>
-						</div> <!-- COL END -->
+				<div class="col-sm-12">
+					<div class="heading_subheading_border heading-color">
+						<h2>The Historical Picture</h2>
+						<p>Trends since 1998</p>
+					</div> <!-- HEADING END -->
+				</div> <!-- COL-12 END -->
 			</div> <!-- ROW END -->
 
 			<div class="row padding-universal">
-						<div class="col-sm-6 padded-top-md">
-							<p class="padded-content-h">
-								 Toronto has run sustained operating surpluses since 2009, when revenues reached $10.9 billion. The highest surplus recorded so far was $1.19 billion in 2015. Operating surpluses are shown in <span style="color: rgb(124,181,236)">blue</span> and deficits are shown in <span style="color: red">red</span>.
-							</p>
-						</div> <!-- COL END -->
-						<div class="col-sm-6">
-							<div id="bar-chart"></div>
-						</div> <!-- COL-6-END -->
+				<div class="col-sm-12 padded-top-sm">
+					<div id="chart"></div>
+					<p class="padded-top-sm">This chart displays city revenues and expenses since 1998. As of 2015, city revenues have almost doubled from the $6.3 billion recorded in 2000. </p>
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">TIP</button>
+					 <p class="small padded-top-sm">Tap on points on the chart (or hover your mouse) to see the dollar amount for that year. Move your finger across the chart to see values for each year.</p>
+						        			    	
+				</div> <!-- COL END -->
+			</div> <!-- ROW END -->
+
+			<div class="row padding-universal">
+				<div class="col-sm-6 padded-top-sm">
+					<div class="heading_subheading_border heading-color">
+						<h2>Operating Balance Trends</h2>
+						<!-- <p></p> -->
+					</div> <!-- HEADING END -->
+						<p class="padded-top">Toronto has run sustained operating surpluses since 2009, when revenues reached $10.9 billion. The highest surplus recorded so far was $1.19 billion in 2015. Operating surpluses are shown in <span style="color: rgb(124,181,236)">blue</span> and deficits are shown in <span style="color: red">red</span>. 
+			        	</p>
+				</div> <!-- COL END -->				
+				<div class="col-sm-6">
+					<div class="demo-card-square-lg mdl-card mdl-shadow--2dp">
+					  <div class="mdl-card__title mdl-card--expand" id="col-6-chart">
+					    <div id="bar-chart"></div>
+					  </div>
+					  <div class="mdl-card__supporting-text">
+					    Hover (or touch) data points to see actual amounts. Click the &#9776; icon for chart download options.
+					  </div>
+					  <div class="mdl-card__actions mdl-card--border">
+					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="datastory-surpluses-deficits.php">EXPLORE</a>
+					  </div> <!-- CARD BORDER END -->
+					</div>  <!-- DEMO CARD END -->
+				</div> <!-- COL END -->
 			</div> <!-- ROW END -->
 			
 			<div class="row padding-universal">
 				<div class="col-sm-12">
-					<h1 class="center">REVENUES</h1>
-					<p class="center tiny-padding padded-content-h"><em>How the city finances operations</em></p>
-					<div class="short-border-black"></div>
+					<div class="heading_subheading_border heading-color">
+						<h2>Revenues</h2>
+						<p>How the city finances operations</p>
+					</div> <!-- HEADING END -->
 				</div> <!-- COL END -->
-				<div class="col-sm-12">
-					<div class="padded-content-h">
-						<p>Unlike a business, the City does not make the bulk of its money by selling goods and services. Taxes and funding transfers make up the majority of the funds used by the city to operate. The charts below show the largest revenue sources and their proportion relative to the total revenue base.</p>
+			</div> <!-- ROW END -->
 
-						<p class="body-text">Hover over the bars (or touch the bars on mobile) to view the dollar amounts for each category.</p>	
-					</div>
-				</div> <!-- COL END -->
-					
-				<div class="col-sm-12">
+			<div class="row padding-universal">
+				<div class="col-sm-10 col-sm-offset-1 padded-top-sm">
 					<div id="stackedBar"></div>
-				</div> <!-- COL-12 END -->
+				</div> <!-- COL END -->
+				
 				<div class="col-sm-12">
-					<div class="padded-content-h">
-						<p class="body-text">The <strong>User Charges</strong> category includes a number of sub-categories that generate fees for the City. This includes transportation services such as the Toronto Transit Commission. It also includes recreational and cultural services such as parks, golf courses and museums.</p>
-						
-						<p class="body-text">The "Other" category under includes revenues from the following sources: 
-							<ul>
-								<li>Government Business Enterprise Earnings</li>
-								<li>Investment Income</li>
-								<li>Development Charges</li>
-								<li>Rent and Concessions</li>
-								<li>Other expenses</li>
-							</ul>
+		        	<p>Unlike a business, the City does not make the bulk of its money by selling goods and services. Taxes and funding transfers make up the majority of the funds used by the city to operate. The charts below show the largest revenue sources and their proportion relative to the total revenue base.</p>
+
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">TIP</button>
+					<p class="padded-top-sm small">Tap the legend labels to remove them from the series. Tap again to add them back. This lets you view individual numbers in isolation.</p>
+
+					<p>The <strong>User Charges</strong> category includes a number of sub-categories that generate fees for the City. This includes transportation services such as the Toronto Transit Commission. It also includes recreational and cultural services such as parks, golf courses and museums.</p>
+					
+					<p>The "Other" category under includes revenues from the following sources: 
+						<ul>
+							<li>Government Business Enterprise Earnings</li>
+							<li>Investment Income</li>
+							<li>Development Charges</li>
+							<li>Rent and Concessions</li>
+							<li>Other expenses</li>
+						</ul>
+					</p>
+				</div> <!-- COL END -->
+			</div> <!-- ROW END -->
+				
+				
+			<div class="row padding-universal">
+				<div class="col-sm-12">
+					<div class="heading_subheading_border heading-color">
+						<h2>City Expenses</h2>
+						<p>What the money was spent on and how much</p>
+					</div> <!-- HEADING END -->
+				</div> <!-- COL END -->
+			</div> <!-- ROW END -->
+
+			<div class="row padding-universal">
+				<div class="col-sm-12">
+					<p>Expenditures in 2015 totaled $10.83 billion, a 3% increase over the $10.46 billion spent in 2014. The largest expenditure categories were Transportation, Social and Family Services and Protection to Persons and Property, which comprised 62% of total expenditure.</p> <br><br>
+			    	<div id="expenses-chart"></div>
+
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">TIP</button>
+						<p class="small padded-top-sm">
+							Tap the legend labels to remove them from the series. Tap again to add them back. This lets you view individual numbers in isolation.	
 						</p>
-					</div>
 				</div> <!-- COL END -->
 			</div> <!-- ROW END -->
+				
 
 			<div class="row padding-universal">
 				<div class="col-sm-12">
-					<h1 class="center">EXPENSES</h1>
-					<p class="center tiny-padding padded-content-h"><em>What the money was spent on and how much</em></p>
-					<div class="short-border-black"></div>
+					<div class="heading_subheading_border heading-color">
+						<h2>Spending Implications</h2>
+						<p>How are surpluses spent?</p>
+					</div> <!-- HEADING END -->
 				</div> <!-- COL END -->
-				<div class="col-sm-12 padded-content-h">
-					<div class="body-text">
-						<p>Expenditures in 2015 totaled $10.83 billion, a 3% increase over the $10.46 billion spent in 2014. The largest expenditure categories were Transportation, Social and Family Services and Protection to Persons and Property, which comprised 62% of total expenditure. </p>
+
+				<div class="col-sm-6 padded-top-sm">
+					<div class="padded-content-h-left">
+						<p>Toronto recorded an annual surplus of $1.19 billion in 2015 and has an <strong>accumulated surplus</strong> of $21.24 billion. Does that mean that $21 billion is available for spending on public services?</p>
+
+						<p>Not exactly. As per provincial law, Toronto is required to balance its budget, i.e. ensure that budgeted expenses in a financial year do not exceed budgeted revenues. In practice, this results in operating surpluses due to conservative budgeting practices. Of that surplus, 75% is allocated to spending on projects in the capital budget with the remainder allocated to city reserves to meet various other financial obligations.</p> 
+
+						<p>The accumulated surplus number is arrived at by first adding up the amounts that the city has invested in capital assets (such as land and buildings) and has in operating fund reserves and other types of reserves. Then, the total of expected future payouts and allocations related to the capital fund, mortgages and debt repayments are subtracted. The chart on the right displays how the numbers work out.</p>
+
+						<p>For 2015, <strong>$2.73 billion</strong> of the accumulated surplus is allocated to funding services in the operating budget. </p>
 					</div>
 				</div> <!-- COL END -->
-				<div class="col-sm-12">
-					<div id="expenses-chart"></div>
+				<div class="col-sm-5 padded-top-sm">
+					<!-- MDL Square card -->
+					<div class="demo-card-square mdl-card mdl-shadow--2dp">
+					  <div class="mdl-card__title mdl-card--expand">
+					    <div id="drilldown"></div>
+					  </div>
+<!-- 					  <div class="mdl-card__supporting-text">
+
+					  	</div>
+ -->					  <div class="mdl-card__actions mdl-card--border">
+					    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">TIP</button> <p class="small padded-top-sm">Click or tap the individual bars to drill down into the sub-categories.</p>
+					  </div> <!-- CARD BORDER END -->
+					</div>  <!-- DEMO CARD END -->
 				</div> <!-- COL END -->
 			</div> <!-- ROW END -->
 
-			<div class="row padding-universal">
-				<div class="col-sm-12">
-					<h1 class="center">IMPLICATIONS</h1>
-					<p class="center tiny-padding padded-content-h"><em>How are surpluses spent?</em></p>
-					<div class="short-border-black"></div>
-				</div> <!-- COL END -->
-				<div class="col-sm-7 padded-content-left">
-					<p>Toronto recorded an annual surplus of $1.19 billion in 2015 and has an <strong>accumulated surplus</strong> of $21.24 billion. Does that mean that $21 billion is available for spending on public services?</p>
-
-					<p>Not exactly. As per provincial law, Toronto is required to balance its budget, i.e. ensure that budgeted expenses in a financial year do not exceed budgeted revenues. In practice, this results in operating surpluses due to conservative budgeting practices. Of that surplus, 75% is allocated to spending on projects in the capital budget with the remainder allocated to city reserves to meet various other financial obligations.</p> 
-
-					<p>The accumulated surplus number is arrived at by first adding up the amounts that the city has invested in capital assets (such as land and buildings) and has in operating fund reserves and other types of reserves. Then, the total of expected future payouts and allocations related to the capital fund, mortgages and debt repayments are subtracted. The chart on the right displays how the numbers work out.</p>
-
-					<p>For 2015, $2.73 billion of the accumulated surplus is allocated to funding services in the operating budget. </p>
-				</div> <!-- COL END -->
-				<div class="col-sm-5 padded-top-md">
-					<div id="drilldown"></div>
-				</div> <!-- COL END -->
-			</div> <!-- ROW END -->
-
-			<!-- <div class="row padding-universal">
-				<div class="col-sm-12 padded-content-h">
-					<h2 class="center">FURTHER READING</h2>
-					<ul>
-						<li><a href="https://www1.toronto.ca/wps/portal/contentonly?vgnextoid=4e48a8c973efa410VgnVCM10000071d60f89RCRD&vgnextchannel=729c6cbd2b95a410VgnVCM10000071d60f89RCRD">Understanding the Toronto City Budget (City of Toronto)</a></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div> 
-			</div>  -->
 
 			<div class="row padding-universal" id="about-the-author">
 					<?php include 'authors/author-rafi.php' ?>
@@ -204,7 +223,10 @@
 				<?php include 'footer.php' ?>
 			</div> <!-- ROW END -->
 	
-	</div> <!-- CONTAINER END -->
+	</div> <!-- PAGE CONTENT END -->
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/material.min.js"></script>
 	<script src="js/highcharts.js"></script>
 	<script src="js/modules.js"></script>
 	<script src="js/exporting.js"></script>
@@ -408,7 +430,7 @@
         			        text: 'Accumulated Surplus: Where the money goes'
         			    },
         			    subtitle: {
-        			        text: 'Click the columns to view drilldowns. Source: Audited Financial Statements 2015, Note 17'
+        			        text: 'Source: Audited Financial Statements 2015, Note 17'
         			    },
         			    credits: {
         			    	enabled: false

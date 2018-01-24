@@ -2,28 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
+	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
 	<meta name="description" content="Learn about Budgetpedia">
   	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
   	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+	<link href="css/material.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
-	<link rel="stylesheet" href="css/pushy.css">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="js/pushy.js"></script>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="shortcut icon" href="img/budgetpedia-favicon.ico" type="image/x-icon">
+	   <!-- Material Design Lite -->
+	   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	   <!-- Material Design icon font -->
+	   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
-	<div class="container-fluid" id="container-1">
-		<?php include 'nav-menu.php' ?>
-	</div> <!-- CONTAINER-1 END -->
-	<div class="container-fluid">
+	<? include 'nav-menu.php' ?>
+	    <div class="page-content"> <!-- CONTAINER-FLUID excluded -->
 		<div class="row" id="about-header">
 			<div class="col-sm-12">
-				<div class="center vertical-center">
-					<span class="page-title">ABOUT <br>BUDGETPEDIA</span>
+				<div class="padded-top-sm">
+					<h1 class="center">ABOUT <br>BUDGETPEDIA</h1>
 				</div>
 			</div> <!-- COL-12 END -->
 		</div>	<!-- ROW END -->
@@ -41,7 +43,7 @@
 
 		<div class="row padding-universal">
 			<div class="col-sm-12 padded-content-h">
-				<h1 class="center">PROJECT GOALS</h1>
+				<h2 class="center">PROJECT GOALS</h2>
 					<ul class="list-spacing">
 						<li>To support informed debate about the Toronto budget through budget literacy (education), visualization, and engagement</li>
 						<li>To provide constructive feedback to the City about the Toronto budget</li>
@@ -53,20 +55,20 @@
 		
 		<div class="row padding-universal">
 			<div class="col-sm-12 center">
-				<h1 class="center">WHO WE ARE</h1>
+				<h2 class="center">WHO WE ARE</h2>
 				<p class="center">The Budgetpedia team at a glance</p>
 			</div> <!-- COL-END -->
 		
 			<div class="col-sm-4 center padded-top-sm">
-				<img class="img-responsive img-circle center-block" src="img/team/henrik-bechmann.png" alt="Henrik Bechmann image">
+				<img class="img-responsive img-circle center-block" src="img/team/henrik-bechmann.png" style="width:50%;" alt="Henrik Bechmann image">
 				<h3 class="position-name">Henrik Bechmann</h3>
 				<p class="position-title"><em><strong>Founder & Project Lead</strong></em></p>
 				<a class="center" href="https://www.linkedin.com/in/henrikbechmann/?ppe=1"><img src="img/In-2C-28px-R.png" alt="LinkedIn"></a>
-				<p class="bio">Henrik Bechmann is a retired software developer with a passion for supporting community/civil service collaboration. His software development background was mostly corporate departmental database applications. In community action he has worked with food co-ops, neighbourhood safety, and acted as webmaster for a number of community websites. </p>
+				<p class="bio">Henrik Bechmann is a retired software developer with a data applications background and a passion for supporting community/civil service collaboration. In community action he has worked with food co-ops and neighbourhood safety groups.</p>
 			</div> <!-- COL-END -->
 
 			<div class="col-sm-4 center padded-top-sm">
-				<img class="img-responsive img-circle center-block" src="img/team/rafi-chaudhury.jpg" alt="Rafi Chaudhury image">
+				<img class="img-responsive img-circle center-block" src="img/team/rafi-chaudhury.jpg" style="width:50%;"  alt="Rafi Chaudhury image">
 				<h3>Rafi Chaudhury</h3>
 				<p class="position-title"><em><strong>Project Manager & Web Developer</strong></em></p>
 				<a class="center" href="https://www.linkedin.com/in/rafichaudhury/"><img src="img/In-2C-28px-R.png" alt="LinkedIn"></a>
@@ -74,30 +76,24 @@
 			</div> <!-- COL-END -->
 
 			<div class="col-sm-4 center padded-top-sm">
-				<img class="img-responsive img-circle center-block" src="img/team/chris-graham.png" alt="Chris Graham image">
+				<img class="img-responsive img-circle center-block" src="img/team/chris-graham.png" style="width:50%;"  alt="Chris Graham image">
 				<h3>Chris Graham</h3>
 				<p class="position-title"><em><strong>Product Champion</strong></em></p>
 				<p class="bio">Christopher Graham is our product champion, co-lead of our UX team, and is involved with research and project development.</p>
 			</div> <!-- COL-END -->
 		</div> <!-- ROW END -->
 		<div class="row padding-universal"> 
-<!-- 			<div class="col-sm-4 center padded-top-sm">
-				<img class="img-responsive img-circle center-block" src="img/team/sarah-shoker.png" alt="Sarah Shoker image">
-				<h3>Sarah Shoker</h3>
-				<p class="position-title"><em><strong>Position Name</strong></em></p>
-				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare libero id est faucibus elementum.</p>
-			</div>  -->
-			<div class="col-sm-4 center padded-top-sm">
-				<img class="img-responsive img-circle center-block" src="img/team/jim-rootham.png" alt="Jim Rootham image">
+			<div class="col-sm-4 col-sm-offset-4 center ">
+				<img class="img-responsive img-circle center-block" src="img/team/jim-rootham.png" style="width:50%;"  alt="Jim Rootham image">
 				<h3>Jim Rootham</h3>
-				<p class="position-title"><em><strong>Position Name</strong></em></p>
-				<p class="bio">Jim Rootham is a computer scientist, has taken on the challenge of reviewing the current codebase to prepare for the next development phase, and is co-lead of our software team.</p>
+				<p class="position-title"><em><strong>Database Developer</strong></em></p>
+				<p class="bio">Jim Rootham is a computer scientist and has taken on the challenge of reviewing the current codebase to prepare for the next development phase, and is co-lead of our software team.</p>
 			</div> <!-- COL-END -->
 		</div> <!-- ROW END -->
 
 		<div class="row padding-universal">
 				<div class="col-sm-12 center padded-content-h">
-				<h1>CONNECT WITH US</h1>
+				<h2>CONNECT WITH US</h2>
 				<p>We post short updates on Twitter, and use Medium to post longer articles and blog posts on budget-related topics.</p>
 				<ul class="no-bullets">
 					<li><img src="img/medium.png" alt="Medium Icon" class="img-icon"><a href="http://medium.com/budgetpedia">Medium</a></li>
@@ -110,6 +106,8 @@
 			<?php include 'footer.php' ?>
 		</div> <!-- ROW END -->
 	</div> <!-- CONTAINER END -->
-	
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/propeller.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

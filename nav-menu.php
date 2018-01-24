@@ -1,18 +1,26 @@
-		<nav class="pushy pushy-left">
-		    <ul class="no-bullets menu-font">  
-		        <li><a href="index.php">HOME</a></li>
-		        <li>DATA STORIES</a></li>
-		        	<ul class="no-bullets">
-		        		<li><a href="datastory-surpluses-deficits.php">SURPLUSES & DEFICITS</a></li>
-		        		<li><a href="datastory-city-staffing.php">CITY WORKFORCE & SALARIES</a></li>
-		        	</ul>  
-		        <li><a href="http://budgetpedia.ca/explorer">DATA EXPLORER (BETA)</a></li>
-		        <li><a href="about.php">ABOUT US</a></li>
-		    </ul>
-		</nav>
-		<div class="site-overlay"></div>
 
-		<!-- <div id="container"> -->
-		    <!-- Menu Button -->
-		    <div class="menu-btn">&#9776; BUDGETPEDIA</div> <!-- menu-btn row-border -->
-		<!-- </div> -->
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title"><a class="no-underline" href="index.php">BUDGETPEDIA</a></span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="about.php">ABOUT US</a>
+          <a class="mdl-navigation__link" href="about-the-budget.php">ABOUT THE BUDGET</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">MENU</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="datastory-surpluses-deficits.php">Surpluses & Deficits Backgrounder</a>
+        <a class="mdl-navigation__link" href="datastory-city-staffing.php">Staff Numbers & Salaries</a>
+        <a class="mdl-navigation__link" href="http://budgetpedia.ca/explorer">Data Explorer (BETA)</a>
+        <!-- <a class="mdl-navigation__link" href="">Link</a> -->
+      </nav>
+    </div>
+    <main class="mdl-layout__content">

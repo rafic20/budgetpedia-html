@@ -2,151 +2,203 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
+	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
 	<meta name="description" content="Learn about Budgetpedia">
   	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
   	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+	<link href="css/material.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/budgetpedia-apr2017.css">
-	<link rel="stylesheet" href="css/pushy.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link rel="shortcut icon" href="img/budgetpedia-favicon.ico" type="image/x-icon">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="js/pushy.js"></script>
+	   <!-- Material Design Lite -->
+	   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	   <!-- Material Design icon font -->
+	   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
-<!-- 	************* SITE DESIGN & STRATEGY: RAFI CHAUDHURY ************* -->
+	<? include 'nav-menu.php' ?>
+	    <div class="page-content"> <!-- CONTAINER-FLUID excluded -->
+	    		<div class="row padding-universal" id="site-header">
+	    			<div class="col-sm-12">
+	    					<div class="center vertical-center">
+	    						<h1>Budgetpedia</h1>
+	    						<p class="marquee-text-sm light-text">Visualizing the Toronto Budget for Civic Engagement</p> 
+	    					</div>
+	    			</div>
+	    			<!-- COLUMN END -->
+	    			<div class="col-sm-4 padded-top center">
+	    				<div class="box-1">
+	    					<span class="headline-numbers-1">2.6</span> <br>
+	    					<span class="number-description">MILLION <br> RESIDENTS</span>	
+	    				</div>
+	    			</div> 
+	    			<!-- COL END -->
 
+	    			<div class="col-sm-4 padded-top center padded-col-left">
+	    				<div class="box-1">
+	    					<span class="headline-numbers-2">$12</span><br>
+	    					<span class="number-description">BILLION <br>CITY BUDGET</span>	
+	    				</div>
+	    			</div> <!-- COL END -->
+	    			<div class="col-sm-4 padded-top center padded-col-left">
+	    				<div class="box-1">
+	    					<span class="headline-numbers-3">$330</span><br>
+	    					<span class="number-description">BILLION <br>GDP</span>
+	    				</div>
+	    			</div>
+	    		</div> <!-- ROW END -->
+				<div class="row padding-universal">
+					<div class="col-sm-12 padded-content-right">
+						<p>Budgetpedia helps demystify city budgets, walks you through the budget-setting process and identifies ways in which you as a resident can have a more <strong>active voice</strong> in deciding how the city spends its money. We use simple, to-the-point charts and other interactive <strong>data visualizations</strong>  to make budgets more accessible to all audiences at all levels of knowledge.</p>
+					</div> <!-- COL END -->
+				</div> <!-- ROW END -->
 
-	<div class="container-fluid" id="container-1">
-		<?php include 'nav-menu.php' ?>
-	</div> <!-- CONTAINER-1 END -->
+				<div class="row padding-universal">
+					<div class="col-sm-12">
+						<div class="heading_subheading_border heading-color">
+							<h1>Visualize the Budget</h1>
+							<p>On-demand data when you need it</p>
+						</div> <!-- HEADING END -->
+					</div> <!-- COL END -->
+				</div> <!-- ROW END -->
 
-	<div class="container-fluid">
-		
-		<div class="row padding-universal" id="site-header">
-			<div class="col-sm-12">
-					<div class="center vertical-center">
-						<span class="budgetpedia-logo">BUDGETPEDIA</span>
-						<h2 class="light-text">Supporting informed debate about the Toronto budget</h2> 
+				<div class="row padding-universal">
+					<div class="col-sm-6 padded-top-md padded-content-right">
+						<p>Open data is a critical to increasing the transparency and accountability of local governments to its constituents.
+						Budgetpedia's <strong>Data Stories</strong> provide helpful additional context designed to assist residents in making sense of the numbers.
+						</p>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">TIP</button> <span style="padding-left: 5px; font-size: 1em;">Click on one of the buttons below to generate the chart</span>.
+						
+							<!-- <span style="display:inline-block; width:50px;"></span> -->
+							<ul class="no-bullets padded-top-sm">
+								<li><input name="g" class="test" type="radio" value="a">City Revenues</input></li>
+								<li><input class="test" name="g" type="radio" value="b">City Expenses</input></li>
+								<li><input class="test" name="g" type="radio" value="c">Operating Surplus/Deficit </input></li>
+							</ul>
+							<p>Check out our more of our <strong>Data Stories</strong> below.</p>	
+					</div> <!-- COL END -->
+					<div class="col-sm-6 padded-col-left-lg">
+						<!-- MDL Square card -->
+						<div class="demo-card-square-md mdl-card mdl-shadow--2dp">
+						  <div class="mdl-card__title mdl-card--expand" id="homepage-chart-bg">
+						    <!-- <h2 class="mdl-card__title-text">Dynamic Charts</h2> -->
+						    <div id="homepage-chart"></div>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						    Hover (or touch) data points to see actual amounts. Click the &#9776; icon for chart download options.
+						  </div>
+						  <!-- <div class="mdl-card__actions mdl-card--border">
+						    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="datastory-surpluses-deficits.php">EXPLORE</a>
+						  </div> --> <!-- CARD BORDER END -->
+						</div>  <!-- DEMO CARD END -->
 					</div>
-			</div><!-- COLUMN END -->
-			<div class="col-sm-4 padded-top center">
-				<div id="box-1">
-					<span class="headline-numbers-1">2.6</span> <br>
-					<span class="number-description">MILLION <br> RESIDENTS</span>	
-				</div>
-			</div> <!-- COL END -->
+					</div> <!-- COL END -->			
+				</div> <!-- ROW END -->
 
-			<div class="col-sm-4 padded-top center padded-col-left">
-				<div id="box-2">
-					<span class="headline-numbers-2">$12</span><br>
-					<span class="number-description">BILLION <br>CITY BUDGET</span>	
-				</div>
-			</div> <!-- COL END -->
-			<div class="col-sm-4 padded-top center padded-col-left">
-				<div id="box-3">
-					<span class="headline-numbers-3">$330</span><br>
-					<span class="number-description">BILLION <br>GDP</span>
-				</div>
-			</div>
-		</div> <!-- ROW END -->
+				<div class="row padding-universal" id="data-stories">
+					<div class="col-sm-12">
+						<div class="heading_subheading_border heading-color">
+							<h1>Data Stories</h1>
+							<p>Putting the numbers into context</p>
+						</div> <!-- HEADING END -->
+					</div> <!-- COL END -->					
+				</div> <!-- ROW END -->
 
+				<div class="row padding-universal">
+					<div class="col-sm-6">
+						<!-- MDL Square card -->
+						<div class="demo-card-square mdl-card mdl-shadow--2dp">
+						  <div class="mdl-card__title mdl-card--expand" id="surplus-deficit">
+						    <h2 class="mdl-card__title-text">Surpluses & Deficits</h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						    How they're calculated and what they mean for you.
+						  </div>
+						  <div class="mdl-card__actions mdl-card--border">
+						    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="datastory-surpluses-deficits.php">EXPLORE</a>
+						  </div> <!-- CARD BORDER END -->
+						</div>  <!-- DEMO CARD END -->
+					</div> <!-- COL END -->
+
+					<div class="col-sm-6">
+						<!-- MDL Square card -->
+						<div class="demo-card-square mdl-card mdl-shadow--2dp">
+						  <div class="mdl-card__title mdl-card--expand" id="city-workforce">
+						    <h2 class="mdl-card__title-text">Workforce Size & Salaries</h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						    How the city's 51,000 employees are remunerated.
+						  </div>
+						  <div class="mdl-card__actions mdl-card--border">
+						    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="datastory-surpluses-deficits.php">EXPLORE</a>
+						  </div> <!-- CARD BORDER END -->
+						</div>  <!-- DEMO CARD END -->
+					</div> <!-- COL END -->
+				</div> <!-- ROW END -->
+
+				<div class="row padding-universal">
+					<div class="col-sm-6 padded-top-sm">
+							<div class="heading_subheading_border heading-color">
+								<h1>Data Explorer</h1>
+								<p>Granular-level data visualization</p>
+							</div> <!-- HEADING END -->
+							<div class="padded-top-sm">
+								<p>The <strong>Data Explorer</strong> is a visualization engine displaying on-demand budget data across various areas including transportation, social services, health and more. For advanced users in publicy policy, education and industry, Budgetpedia offers training on how to effectively use the Explorer to drive decision-making.</p>	
+							</div>
+					</div> <!-- COL END -->
+					<div class="col-sm-6 padded-top-sm padded-col-left-lg">
+						<!-- MDL Square card -->
+						<div class="demo-card-square-sm mdl-card mdl-shadow--2dp">
+						  <div class="mdl-card__title mdl-card--expand" id="data-explorer-card">
+						    <!-- <h2 class="mdl-card__title-text"></h2> -->
+						  </div>
+						  <!-- <div class="mdl-card__supporting-text">
+						    How they're calculated and what they mean for you.
+						  </div> -->
+						  <div class="mdl-card__actions mdl-card--border	">
+						  	<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://budgetpedia.ca/explorer">
+						  	  DATA EXPLORER (BETA)
+						  	</a>
+						  </div> <!-- CARD BORDER END -->
+						</div>  <!-- DEMO CARD END -->
+					</div> <!-- COL END -->
+				</div> <!-- ROW END -->
+
+
+				<div class="row padding-universal">
+					<div class="col-sm-12">
+						<div class="heading_subheading_border heading-color">
+							<h1>About Us</h1>
+							<p>Budgetpedia's Mission, Vision and Values</p>
+						</div> <!-- HEADING END -->
+					</div> <!-- COL END -->
+				</div> <!-- ROW END -->
+
+				<div class="row padding-universal">
+					<div class="col-sm-6">
+						<p>Budgetpedia is a nonprofit organization borne out of <strong>CivicTechTO</strong>. The Budgetpedia team comprises civic action leaders, database and web developers with a common interest in leveraging open data to help inform residents regarding how budgets are set, and the impact that revenue and expense decisions have on the welfare of the people in the city. </p>
+						<p>To learn more about the team behind Budgetpedia and the methodology underpinning the data visualizations, <a href="about.php">click here</a></p>				
+					</div> <!-- COL END -->
+					<div class="col-sm-6">
+						<img src="img/CTTO-logo-sm.png" class="img-block img-responsive" alt="CivicTechTO logo">
+					</div> <!-- COL END -->
+				</div> <!-- ROW END -->
+
+				<div class="row padding-universal" id="footer">
+					<?php include 'footer.php' ?>
+				</div> <!-- ROW END -->
+			</div> <!-- CONTAINER END -->	
+	    </div> <!-- PAGE CONTENT END -->
+	  </main>
+	</div>
 		
-		<div class="row padding-universal">
-			<div class="col-sm-12 padded-content-h">
-				<p>Budgetpedia helps demystify city budgets, walks you through the budget-setting process and identifies ways in which you as a resident can have a more <strong>active voice</strong> in deciding how the city spends its money. </p>
-
-				<p>We use simple, to-the-point charts and other interactive <strong>data visualizations</strong>  to make budgets more accessible to all audiences at all levels of knowledge. Our goal is to make Budgetpedia a one-stop shop for the easy discovery of financial data on a wide variety of operations in City of Toronto. </p>
-			</div> <!-- COL END -->
-		</div> <!-- ROW END -->
-
-		<div class="row padding-universal">
-			<div class="col-sm-12 padded-content-h">
-				<h1 class="center">THE BUDGET</h1>
-				<p class="center tiny-padding padded-content-h"><em>The Purpose and the Process</em>
-				<div class="short-border-black"></div>
-			</div> <!-- COL END -->
-			<div class="col-sm-12 padded-content-h">
-				<p>The Toronto budget is divided into <strong>operating</strong> and <strong>capital</strong> budgets. Operating budgets account for day-to-day costs of running services using available resources. The capital budgets account for costs of creating new assets, like community centres or roads. </p>
-
-				<p>The operating budget for 2017 was listed at <strong>$12.4 billion</strong>, which is over <strong>$4,300</strong> for every man, woman, and child in the City. The capital budget for the year was listed at over $3B. For the time being, Budgetpedia's current focus is on understanding the operating budget.</p> 
-				<a class="button button-shadow" href="about-the-budget.php">LEARN MORE</a>
-			</div>
-		</div> <!-- ROW END -->
-
-		<div class="row padding-universal">
-			<div class="col-sm-12 padded-content-h">
-				<h1 class="center">DATA STORIES</h1>
-				<p class="center tiny-padding padded-content-h"><em>Putting the numbers into context</em></p>
-				<div class="short-border-black"></div>
-			</div>
-			<div class="col-sm-6 padded-content-h">
-				<p class="padded-top-md">Relevant data is often obscured within highly complex financial reports that are difficult to understand. Budgetpedia extracts the raw data from government disclosures and converts them into engaging data visualizations. </p>
-				
-				<p>Open data is a critical to increasing the transparency and accountability of local governments to its constituents. 
-				Budgetpedia's <strong>Data Stories</strong> provide helpful additional context designed to assist residents in making sense of the numbers and play a more active role in determining where funding goes. 
-				</p>
-
-				<p>Want to learn what budget surpluses and deficits mean for you? Click below.</p>
-
-				<a class="button button-shadow" href="datastory-surpluses-deficits.php">DATA STORY</a>
-			</div> <!-- COL END -->
-			<div class="col-sm-6">
-						<div><p>Click on one of the buttons below to generate the chart</p></div>
-						<!-- <span style="display:inline-block; width:50px;"></span> -->
-						<ul class="no-bullets">
-							<li><input name="g" class="test" type="radio" value="a">City Revenues</input></li>
-							<li><input class="test" name="g" type="radio" value="b">City Expenses</input></li>
-							<li><input class="test" name="g" type="radio" value="c">Operating Surplus/Deficit </input></li>
-						</ul>
-						
-						<!-- <span style="display:inline-block; width:50px;"></span> -->
-
-						
-						<!-- <span style="display:inline-block; width:50px;"></span> -->
-
-					<div id="homepage-chart"></div>
-					<p class="small center"><em>Hover (or touch) data points to see actual amounts. Click the &#9776; icon for chart download options.</em></p>
-				</div> <!-- COL END -->
-		</div> <!-- ROW END -->
-
-		<div class="row padding-universal">
-			<div class="col-sm-12 padded-content-h">
-				<h1 class="center">BUDGETPEDIA EXPLORER</h1>
-				<p class="center tiny-padding padded-content-h"><em>Granular-level data visualization</em></p>
-				<div class="short-border-black"></div>
-			</div> <!-- COL END -->
-			<div class="col-sm-12 padded-content-h">
-				<p>The <strong>Data Explorer</strong> is a visualization engine displaying on-demand budget data across various areas including transportation, social services, health and more. For advanced users in publicy policy, education and industry, Budgetpedia offers training on how to effectively use the Explorer to drive decision-making.</p>
-
-				<a class="button button-shadow" href="http://budgetpedia.ca/explorer">DATA EXPLORER</a>
-			</div> <!-- COL END -->
-		</div> <!-- ROW END -->
-
-		<div class="row padding-universal">
-			<div class="col-sm-12 padded-content-h">
-				<h1 class="center">ABOUT US</h1>
-				<p class="center tiny-padding padded-content-h"><em>Budgetpedia's Mission, Vision and Values</em></p>
-				<div class="short-border-black"></div>
-			</div> <!-- COL END -->
-			<div class="col-sm-6 padded-top">
-				<img src="img/CTTO-logo-sm.png" class="img-block img-responsive" alt="CivicTechTO logo">
-			</div> <!-- COL END -->
-			<div class="col-sm-6">
-				<p>Budgetpedia is a nonprofit organization borne out of CivicTechTO. The Budgetpedia team comprises civic action leaders, database and web developers with a common interest in leveraging open data to help inform residents regarding how budgets are set, and the impact that revenue and expense decisions have on the welfare of the people in the city. </p>
-				<p>To learn more about the team behind Budgetpedia and the methodology underpinning the data visualizations, <a href="about.html">click here</a></p>				
-			</div> <!-- COL END -->
-
-		</div> <!-- ROW END -->
-
-		<div class="row padding-universal" id="footer">
-			<?php include 'footer.php' ?>
-		</div> <!-- ROW END -->
-	</div> <!-- CONTAINER END -->
-	
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="js/material.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script src="js/highcharts.js"></script>
 		<script src="js/modules.js"></script>
 		<script src="js/exporting.js"></script>

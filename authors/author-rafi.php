@@ -1,7 +1,7 @@
 
 
 <div class="col-sm-4 col-sm-offset-2">
-	<img src="img/team/rafi-chaudhury.jpg" class="img-circle img-responsive center-block" alt="Rafi Chaudhury">
+	<img src="img/team/rafi-chaudhury.jpg" class="img-circle img-responsive center-block" style="width:50%" alt="Rafi Chaudhury">
 	<p class="center tiny-padding small-2 author-name"><strong>Rafi Chaudhury</strong></p>	
 	<p class="center tiny-padding small-2"><strong>Project Manager, Budgetpedia</strong></p> 
 	<a class="center" href="https://www.linkedin.com/in/rafichaudhury/"><img class="center-block" src="img/In-2C-28px-R.png" alt="LinkedIn"></a>

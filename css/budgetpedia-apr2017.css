@@ -3,13 +3,21 @@
 	body{overflow-x: hidden!important;}
 	.vertical-center{padding-top: 13% !important;}
 	.padded-col-left{padding-left: 0 !important;}
+	.padded-col-left-lg{padding-left: 0 !important;}
+	.padded-col-left-sm{padding-left: 0 !important;}
 	.padding-universal {padding: 2% 2% !important;}
+	.padded-content-right{padding:0 5% !important;}
 	.headline-data-story{font-size: 1.3em; font-weight: 900;}
 	.sub-headline-data-story {padding-top:10%;font-size: 1.1em !important; font-weight: 300; letter-spacing: .1em !important;}
 	#understanding-the-numbers, #city-staffing{padding-top: 15%!important;}
 	.headline-numbers{text-align:left !important; font-size: 2em !important;}
 	.number-description{text-align: left !important;}
 	p.tiny-padding{padding-bottom: 3% !important; margin: 1% 0;}
+	.demo-card-square-lg.mdl-card {
+	  width: 90% !important;
+	  height: 320px !important;
+	}
+	.demo-card-square-md, .demo-card-square-sm, .demo-card-square-sm {padding-left: 8% !important;}
 	/*#about-the-author{width: 95% !important;}*/
 	/*#container-1{position: absolute; top:0; left: -12px !important;}*/
 }
@@ -18,14 +26,12 @@
 .padding-universal {padding: 2% 10%;}
 .narrow-col-lg{width: 50%;}
 body{
-	font-family:'Lato', sans-serif;
+	font-family:'Roboto', arial;
 	color: rgb(77,77,77);
 }
 
 /*TYPOGRAPHY*/
-/*.body-text{padding-top: 20px; color: rgb(77,77,77);}*/
-/*p.body-text{padding-bottom: 20px; color: rgb(77,77,77);}*/
-p{padding:1em 0; color: rgb(77,77,77);}
+p{padding:.4em 0; color: rgb(77,77,77); font-size: 1.2em;}
 p.small{font-size: 0.9em;}
 p.small-2{font-size: 1.1em;}
 p.tiny-padding{padding: 1% 0; margin: 1% 0;}
@@ -50,117 +56,74 @@ ul.no-bullets{
 
 
 .page-title{font-size: 3em; font-weight: 300;}
-.number-description{text-align:center; font-weight:300; font-size:1.5em;}
+.number-description{font-weight:300; font-size:1.5em; padding-left: 3%;}
 .headline{font-size: 2.8em; font-weight: 900;}
-.headline-data-story{font-size: 2.5em; font-weight: 900;}
+.headline-data-story{font-size: 2.5em; font-weight: 900; padding-left: 3%; margin-bottom: 5px;}
 
-.sub-headline{font-size: 2em; font-weight: 300; letter-spacing: .4em;}
-.sub-headline-data-story {font-size: 2em; font-weight: 300; letter-spacing: .4em;}
+.sub-headline-data-story {font-size: 2em; font-weight: 300; letter-spacing: .4em; padding-left: 3%;}
 
 
-.headline-numbers{text-align: center; color: white;font-size: 2.5em; margin-bottom:2px;}
-.headline-numbers-1, .headline-numbers-2, .headline-numbers-3{color:#f1c40f ; font-size: 2.5em; margin-bottom:2px;} /*#eeff41*/
+.headline-numbers{color: white;font-size: 2.5em; margin-bottom:2px;}
 
-/*.fa, .fa-bars{padding: 0 2px;}*/
+.heading-color{color: rgb(64,84,178);}
+.heading-color>p{font-size: 1.2em;}
+.heading_subheading_border{border-left: 5px solid #4054B2; padding: 3px 8px;} /*#4054B2: same as RGB(64,84,178)*/
 
-/*.headline-numbers-1{color: rgb(241, 196, 15);}
-.headline-numbers-2 {color: #eeff41;}
-.headline-numbers-3 {color: #ff9800;} */
+h1,h2,h3,h4,h5,h6 {margin: 1px 0 !important;}
 
-blockquote{
-    margin-top: 3%;
-    font-size: 2em;
-    color: #000;
-    width: 35%;
-    background: #f1c40f;
-    /*text-align: left;*/
-    margin-right:15px;
-    padding: 15px;
-    /*border: none;*/
-}
-  .gap-left{margin-left: 20px;}
 
-.justify{
-    text-align: justify;
-}
-
-#box-1, #box-2, #box-3{
-	background: rgba(77,77,77,0.6);
-	text-align: center;
-	padding-top: 10%;
-	width: 200px;
-	height: 200px;
-	border-radius: 100%;
+/*CARDS*/
+#surplus-deficit{background: url('../img/city-of-toronto-purple-sq.jpg')  bottom right 15% no-repeat #46B6AC;}
+#city-workforce {background: url('../img/toronto-city-hall-purple.jpg')  bottom right 15% no-repeat #46B6AC;}
+#data-explorer-card {background: url('../img/data-explorer.jpg')  bottom right 15% no-repeat #46B6AC;}
+.mdl-card__title-text {color: white !important;}
+.demo-card-square.mdl-card {
+  width: 90%;
+  height: 400px;
 }
 
 
-.button, .button-sm, .button-lg{
-	font-family: 'Lato', Arial;
-	text-decoration: none;
-	border: 4px solid #f1c40f;
-	color: rgb(77,77,77);
-	font-size: 1.2em;
-	/*position: relative;*/
-	/*background: #f1c40f;*/
+#homepage-chart-bg{background: url(../img/bg-img-chart.jpg) bottom right 15% no-repeat #46B6AC;}
+#homepage-chart{
+	width: 100%;
+	height: 300px;
+	/* BELOW FOR NON-CARD DESIGNS ONLY*/
+	/*background: url(../img/bg-img-chart.jpg) no-repeat center center;*/ 
+	/*background-size: cover;*/
 }
 
+#bar-chart{
+	width: 500px;
+}
+.demo-card-square-lg.mdl-card{
+	width: 500px;
+  height: 500px;
+} 
 
-.button-sm {
-	padding: 10px;
+#drilldown{
+	width: 90%;
+	height: 300px;
 }
 
-.button{
-	padding: 15px;
+.demo-card-square-sm.mdl-card{
+	width: 90%;
+  height: 320px;
+} 
+
+.demo-card-square-md.mdl-card{
+	width: 100%;
+  height: 400px;
+} 
+
+#col-6-chart{
+	width: 80%;
+	height: 300px;
 }
 
-.button-lg{
-	padding: 22px;
-}
-
-.button-shadow{
-	box-shadow: -5px 5px 5px #4C4646; /*SHADE: BLACK COW FROM http://www.computerhope.com/htmcolor.htm*/
-}
-
-.button:hover,.button-sm:hover, .button-lg:hover{
-	background: rgb(155, 89, 182);
-	transition: 0.2s ease-in;
-	text-decoration: none;
-	color: black;
-	background: #f1c40f;
-}
-
-h1, h2{font-family: 'Lato', sans-serif; font-weight: 900; color: black;}
-
-p, li{font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.3em;}
-
-h3.position-name{padding-bottom: 0;}
-p.position-title{font-size:1.2em; padding:5px 0;}
-p.bio {font-size: 1em;}
-
-.box{
-	border: 3px solid #4183D7;
-	float: left;
-	width: 220px;
-	height: 200px;
-	padding: 10px;
-	text-align: center;
-	display: inline-block;
-	margin-right: 5px;
-}
-
-.md-text{
-	font-size: 1.5em;
-}
-
-.img-circle{
-	border-radius: 100%;
-	width: 50%;
-}
-/*.img-sm{width:60%;}*/
 .img-icon{width:25px; margin-right: 5px;}
 
 #site-header{
-	background: url('../img/header-img.jpg') no-repeat center center;
+	background: url('../img/homepage-hero-img.jpg') no-repeat center center;
 	background-size: cover;
 	padding-bottom: 2%;
 	color: white;
@@ -171,6 +134,11 @@ p.bio {font-size: 1em;}
 	background-size: cover;
 	padding-top: 10%;
 	padding-bottom: 5%;
+	color: white !important;
+}
+
+#surplus-calculation{
+	background: url(../img/toronto-towers-card-purple.jpg) bottom right 15% no-repeat #46B6AC;; 
 	color: white !important;
 }
 
@@ -190,11 +158,12 @@ p.bio {font-size: 1em;}
 }
 
 #footer{
-	background: #2c3e50;
+	background: rgb(64,84,178); /*#2c3e50*/
 	color: white;
 }
 a.footer-link, a.footer-link:visited{color: white !important;}
 .center{text-align: center;}
+.right-align{text-align: right;}
 
 
 .page-title{padding-top: 7%;}
@@ -202,16 +171,20 @@ a.footer-link, a.footer-link:visited{color: white !important;}
 .padded-top{padding-top:5%;}
 .padded-top-sm{padding-top:2%;}
 .padded-top-md{padding-top:8%;}
-.padded-col-left{padding-left: 5%}
+.padded-col-left-lg{padding-left: 15%;}
+.padded-col-left-sm{padding-left: 3%;}
 .padded-col-right{padding-right: 5%;}
 .padded-content-h{padding:0 10%;}
-.padded-content-left{padding:0 0 0 10%;}
+.padded-content-h-left{padding:0 0 0 5%;}
+.padded-content-left{padding:0 0 0 8px;}
+.padded-content-right{padding:0 10% 0 0;}
 .padded-bottom-md{padding-bottom: 5%}
+.padded-bottom-sm{padding-bottom: 2%}
 
 .marquee-text{font-size: 2.5em; padding-top: 1.3em;}
 .marquee-text-lg{font-size: 3em; padding-top: 1.3em;}
 .marquee-text-md{font-size: 2.2em; padding-top: 1.3em;}
-.marquee-text-sm{font-size: 2em; padding-top: 1.3em;}
+.marquee-text-sm{font-size: 2em; padding-top: 5px;}
 .marquee-text-xs{font-size: 1.8em; padding-top: 1.3em;}
 
 .number-blue{color:rgb(0,174,241);}
@@ -219,9 +192,16 @@ a.footer-link, a.footer-link:visited{color: white !important;}
 
 
 .light-text{color:white;}
-.vertical-center{padding-top: 6%;}
+.vertical-center{padding-top: 5%;}
 
+a.no-underline{
+	color: white !important;
+}
 
+a.no-underline:hover{
+	color: white !important;
+	text-decoration: none !important;
+}
 #menu{
 	color: white;
 	position: absolute;
@@ -249,10 +229,7 @@ input[type="radio"] {
   margin-right: 5px;
 }
 
-#homepage-chart{
-	background: url(../img/bg-img-chart.jpg) no-repeat center center;
-	background-size: cover;
-}
+
 
 /*.row-border{border-top: 2px solid #D91E53;}*/
 .short-border-black:after{
@@ -282,9 +259,11 @@ li.no-padding-left{padding-left: 0!important;}
 
 .menu-btn{color: white !important; font-size: 1.5em; padding: 1%; width: 100%;} /*background: rgba(0,0,0,0.7);*/
 #container-1{font-size: 1.5em; position: absolute; top:0; left: -15px; color: white; width:100%; z-index:9999;}
-/*#box-1{background: rgba(77,77,77,0.5);}*/
-/*#box-2{background: rgba(22, 160, 133,0.5);} 
-#box-3{background: rgba(52, 152, 219, 0.5);} */
+/*#box-1{background: rgba(77,77,77,0.7); padding: 10px 5px;}
+#box-2{background: rgba(22, 160, 133,0.7); padding: 10px 5px;} 
+#box-3{background: rgba(52, 152, 219, 0.7); padding: 10px 5px;} */
+
+.box-1{background: rgba(64,84,178, 0.8); padding: 10px 5px; width: 75%;}
 
 td{padding-right:10px; padding-bottom: 3px;}
 
@@ -329,3 +308,4 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 background-color: #8dbdd8;
 }
 
+/*NAVBAR*/
