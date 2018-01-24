@@ -134,7 +134,7 @@
 						    How the city's 51,000 employees are remunerated.
 						  </div>
 						  <div class="mdl-card__actions mdl-card--border">
-						    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="datastory-surpluses-deficits.php">EXPLORE</a>
+						    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="datastory-city-staffing.php">EXPLORE</a>
 						  </div> <!-- CARD BORDER END -->
 						</div>  <!-- DEMO CARD END -->
 					</div> <!-- COL END -->
