@@ -20,7 +20,7 @@
 </head>
 
 <body>
-	<? include 'nav-menu.php' ?>
+	<?php include 'nav-menu.php' ?>
 	    <div class="page-content"> <!-- CONTAINER-FLUID excluded -->
 			<div class="row" id="understanding-the-numbers">
 				<div class="col-sm-12"> <!-- page-title -->

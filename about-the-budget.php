@@ -20,7 +20,7 @@
 </head>
 
 <body>
-	<? include 'nav-menu.php' ?>
+	<?php include 'nav-menu.php' ?>
 	    <div class="page-content"> <!-- CONTAINER-FLUID excluded -->
 		<div class="row" id="about-header">
 			<div class="col-sm-12">
