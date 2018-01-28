@@ -75,9 +75,9 @@
 						
 							<!-- <span style="display:inline-block; width:50px;"></span> -->
 							<ul class="no-bullets padded-top-sm">
-								<li><input name="g" class="test" type="radio" value="a">City Revenues</input></li>
-								<li><input class="test" name="g" type="radio" value="b">City Expenses</input></li>
-								<li><input class="test" name="g" type="radio" value="c">Operating Surplus/Deficit </input></li>
+								<li><input name="g" class="test" type="radio" id="button-1" value="a" checked>City Revenues</input></li>
+								<li><input class="test" name="g" type="radio" id="button-2" value="b">City Expenses</input></li>
+								<li><input class="test" name="g" type="radio" id="button-3" value="c">Operating Surplus/Deficit </input></li>
 							</ul>
 							<p>Check out our more of our <strong>Data Stories</strong> below.</p>	
 					</div> <!-- COL END -->
@@ -202,108 +202,72 @@
 		<script src="js/highcharts.js"></script>
 		<script src="js/modules.js"></script>
 		<script src="js/exporting.js"></script>
-		<script>
-			$(function () {
-			    var chart = new Highcharts.Chart({
-			        chart: {
-			            renderTo: 'homepage-chart',
-			            type: 'line',
-			            title: 'please select a category',
-			            backgroundColor: 'rgba(0,0,0,0)'
+		    <script>
+		    $(function() {
+		        var chart = Highcharts.chart('homepage-chart', {
+		        	chart: {
+		        	    renderTo: 'homepage-chart',
+		        	    type: 'line',
+		        	    backgroundColor: 'rgba(0,0,0,0)'
 
-			        },
+		        	},
+		            title: {
+		                   text: 'Revenues, 1998-2015 ($000s)',
+		                   style:{color: '#f1c40f'}
+		               },
+		            xAxis: {
+		                categories: ['1998','1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015'],
+		                labels: {
+		                          style: {color: '#EEE'}
+		                        }
+		            },
+		            yAxis: {
+		                labels:{
+		                    style: {color: '#EEE'}
+		                }
+		            },
+		            credits: {
+		                enabled: false
+		            },
+		            tooltip: {
+		                    pointFormat: "Value: ${point.y:,.0f}"
+		                },
+		            series: [{
+		                data:[6510513,6316052,6345333,6745486,7084372,7246787,7378993,7879032,8511672,8837997,9408473,10414491,11057740,11311103,11711147,10918942,11249617,12020523],
+		                color: '#f1c40f',
+		                showInLegend: false
+		            }]
+		        });
 
-			        xAxis: {
-			            categories: ['1998','1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015'],
-			            labels: {
-			                      style: {color: '#EEE'}
-			                    }
-			        },
-			        yAxis: {
-			            labels:{
-			            	style: {color: '#EEE'}
-			            }
-			        },
-			        credits: {
-			            enabled: false
-			        }
-			    });
+		        // Chart 1 (Default)
+		        $('#button-1').click(function () {
+		            chart.setTitle(
+		                {
+		                    text: "Revenues, 1998-2015",
+		                    style:{color: '#f1c40f'}
+		                });
+		            chart.series[0].setData([6510513,6316052,6345333,6745486,7084372,7246787,7378993,7879032,8511672,8837997,9408473,10414491,11057740,11311103,11711147,10918942,11249617,12020523]);
+		        });
 
-			    $("#chartType").change(function() {
-			        var type = this.value;
-			        if(type !== '0') {
-			            $(chart.series).each(function(){
-			                this.update({
-			                    type: type 
-			                }, false);
-			            });
-			            chart.redraw();
-			        }
-			    });
-			    
-			    $(".test").change(function() {
-			        var value = this.getAttribute("value");
-			        while (chart.series.length > 0) {
-			            chart.series[0].remove(true);
-			        }   
-			        if (value == 'a') {
-			            chart.yAxis[0].setTitle(
-			            	{ 
-			            		text: "$ 000s",
-			            		style:{
-			            			color: '#EEE'
-			            		}
-			            	});
-			            chart.setTitle(
-			            	{
-			            		text: "Revenues, 1998-2015",
-			            		style:{color: '#f1c40f'}
-			            	});
-			            chart.addSeries({
-			                name: 'Revenues',
-			                type: 'line',
-			                color: '#f1c40f',  
-			                data:[6510513,6316052,6345333,6745486,7084372,7246787,7378993,7879032,8511672,8837997,9408473,10414491,11057740,11311103,11711147,10918942,11249617,12020523]
-			            });      
-			            
-			        } else if (value == 'b') {
-			            chart.addSeries({
-			                name: 'Expenses',
-			                type: 'line',
-			                color: '#f1c40f',  
-			                data:[10826108,6344384,6574632,6845851,7081194,7384434,7751536,8111105,8575931,9368619,9963305,9917288,10542178,10650071,10650071,10461634,10210891,10826108]
-			            });
-	              
-			            chart.yAxis[0].setTitle({ text: "Expenses" });
-			            chart.setTitle(
-			            	{
-			            		text: "Expenses, 1998-2015",
-								style:{color: '#f1c40f'}
-			            	});
-			        } else if (value == 'c') {
-			            chart.addSeries({
-			                name: 'Surplus/Deficit',
-			                type: 'column',
-			                color: '#f1c40f',  
-			                data:[-4315595,-28332,-229299,-100365,3178,-137647,-372543,-232073,-64259,-530622,-554832,497203,515562,661032,1061076,457308,1038726,1194415],
-	                		negativeColor: 'red'            
-			            });
-	                    chart.setTitle(
-	                    	{
-	                    		text: "Surplus/Deficit, 1998-2015",
-	        					style:{color: '#f1c40f'}
-	                    	});
-
-			        } else {
-			                chart.addSeries({
-			                name: 'total number of learners',
-			                type: 'column',
-			                color: '#ffcc99',  
-			                data:[100,0,200,0,300,100,400,100,500,200,500,300]             
-			            }); 
-			        }
-			    });
-			});
+		        // Launch Chart 2
+		        $('#button-2').click(function () {
+		            chart.setTitle(
+		                {
+		                    text: "Expenses, 1998-2015",
+		                    style:{color: '#f1c40f'}
+		                });
+		            chart.series[0].setData([10826108,6344384,6574632,6845851,7081194,7384434,7751536,8111105,8575931,9368619,9963305,9917288,10542178,10650071,10650071,10461634,10210891,10826108]);
+		        });
+		        // Launch Chart 3
+		        $('#button-3').click(function () {
+		            chart.setTitle(
+		                {
+		                    text: "Surplus/Deficit, 1998-2015",
+		                    style:{color: '#f1c40f'}
+		                            });
+		            chart.series[0].setData([-4315595,-28332,-229299,-100365,3178,-137647,-372543,-232073,-64259,-530622,-554832,497203,515562,661032,1061076,457308,1038726,1194415]);
+		        });
+		    });
 		</script>
 </body>
 </html>
