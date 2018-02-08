@@ -109,7 +109,7 @@
 				</div> <!-- ROW END -->
 
 				<div class="row padding-universal">
-					<div class="col-sm-6">
+					<div class="col-sm-6 padded-bottom-md">
 						<!-- MDL Square card -->
 						<div class="demo-card-square mdl-card mdl-shadow--2dp">
 						  <div class="mdl-card__title mdl-card--expand" id="surplus-deficit">
@@ -124,7 +124,7 @@
 						</div>  <!-- DEMO CARD END -->
 					</div> <!-- COL END -->
 
-					<div class="col-sm-6">
+					<div class="col-sm-6 padded-bottom-md">
 						<!-- MDL Square card -->
 						<div class="demo-card-square mdl-card mdl-shadow--2dp">
 						  <div class="mdl-card__title mdl-card--expand" id="city-workforce">

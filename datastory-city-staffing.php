@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link rel="shortcut icon" href="img/budgetpedia-favicon.ico" type="image/x-icon">
 	   <!-- Material Design Lite -->
-	   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	   <!-- <script src="https://code.getmdl.io/1.3.0/material.min.js"></script> -->
 	   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 	   <!-- Material Design icon font -->
 	   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -83,7 +83,7 @@
 				</div>
 				<div class="col-sm-12">
 						<table id="staff-numbers-table" class="tablesorter">
-							<thead><tr class="tableizer-firstrow"><th>Division Name</th><th>2017</th><th>2016</th><th>2015</th><th>2014</th></tr></thead><tbody>
+							<thead><tr class="tableizer-firstrow"><th class="">Division Name</th><th>2017</th><th>2016</th><th>2015</th><th>2014</th></tr></thead><tbody>
 							 <tr><td>311 Toronto</td><td>173</td><td>145</td><td>157</td><td>158</td></tr>
 							 <tr><td>Affordable Housing Office</td><td>19</td><td>19</td><td>19</td><td>19</td></tr>
 							 <tr><td>Arena Boards of Management</td><td>67.7</td><td>67.7</td><td>66.6</td><td>67.4</td></tr>
@@ -99,7 +99,7 @@
 				</div>
 			</div> <!-- ROW END -->
 
-			<div class="modal fade" id="staffSizeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal fade" dialog data-backdrop="false" id="staffSizeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -216,7 +216,7 @@
 			</div> <!-- ROW END -->
 
 			<!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal fade" id="myModal" dialog data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">

@@ -3,23 +3,26 @@
 	body{overflow-x: hidden!important;}
 	.vertical-center{padding-top: 13% !important;}
 	.padded-col-left{padding-left: 0 !important;}
-	.padded-col-left-lg{padding-left: 0 !important;}
-	.padded-col-left-sm{padding-left: 0 !important;}
-	.padding-universal {padding: 2% 2% !important;}
+	.padded-col-left-lg{padding-left: 5% !important;}
+	.padded-col-left-sm{padding-left: 5% !important;}
+	.padding-universal {padding: 5% !important;}
 	.padded-content-right{padding:0 5% !important;}
+	.half-width-content{width: 95% !important;}
 	.headline-data-story{font-size: 1.3em; font-weight: 900;}
 	.sub-headline-data-story {padding-top:10%;font-size: 1.1em !important; font-weight: 300; letter-spacing: .1em !important;}
-	#understanding-the-numbers, #city-staffing{padding-top: 15%!important;}
+	#understanding-the-numbers, #city-staffing, #toronto-paramedics-datastory {padding-top: 15%!important;}
 	.headline-numbers{text-align:left !important; font-size: 2em !important;}
 	.number-description{text-align: left !important;}
 	p.tiny-padding{padding-bottom: 3% !important; margin: 1% 0;}
-	.demo-card-square-lg.mdl-card {
+	#staff-numbers-table{width: 95% !important;}
+	.demo-card-square-xl.mdl-card{
+		width: 100% !important;
+	} 
+/*	.demo-card-square-lg.mdl-card {
 	  width: 90% !important;
-	  height: 320px !important;
+	  height: 320px !important;*/
 	}
-	.demo-card-square-md, .demo-card-square-sm, .demo-card-square-sm {padding-left: 8% !important;}
-	/*#about-the-author{width: 95% !important;}*/
-	/*#container-1{position: absolute; top:0; left: -12px !important;}*/
+	/*.demo-card-square, .demo-card-square-md, .demo-card-square-sm, .demo-card-square-sm {padding-bottom: 5% !important;}*/
 }
 
 .light-bttm-border{border-bottom: 2px solid black ;}
@@ -31,7 +34,7 @@ body{
 }
 
 /*TYPOGRAPHY*/
-p{padding:.4em 0; color: rgb(77,77,77); font-size: 1.2em;}
+p{color: rgb(77,77,77); font-size: 1.4em; line-height: 1.8em;} /*padding:.4em 0;*/
 p.small{font-size: 0.9em;}
 p.small-2{font-size: 1.1em;}
 p.tiny-padding{padding: 1% 0; margin: 1% 0;}
@@ -41,7 +44,8 @@ p.data-citation{color: gray; font-size: 1em; padding: 0.5%; }
 .navigation-tip-text {background-color: #F9BF3B!important; padding: 2px;}
 
 ul li{
-	font-size: 1.2em;
+	/*font-size: 1.2em;*/
+	margin-bottom: 5px;
 }
 
 ul.no-bullets{
@@ -54,7 +58,7 @@ ul.no-bullets{
 	font-weight: 300;
 }
 
-
+.menu-title{color: white !important;}
 .page-title{font-size: 3em; font-weight: 300;}
 .number-description{font-weight:300; font-size:1.5em; padding-left: 3%;}
 .headline{font-size: 2.8em; font-weight: 900;}
@@ -95,6 +99,10 @@ h1,h2,h3,h4,h5,h6 {margin: 1px 0 !important;}
 #bar-chart{
 	width: 500px;
 }
+.demo-card-square-xl.mdl-card{
+	width: 90%;
+  height: 500px;
+} 
 .demo-card-square-lg.mdl-card{
 	width: 500px;
   height: 500px;
@@ -142,8 +150,19 @@ h1,h2,h3,h4,h5,h6 {margin: 1px 0 !important;}
 	color: white !important;
 }
 
+#paramedics-card{background: url(../img/toronto-paramedic-ambulance.jpg) bottom right 15% no-repeat #46B6AC;; 
+	color: white !important;}
+
 #city-staffing{
 	background: url(../img/toronto-city-hall-purple.jpg) no-repeat center center;
+	background-size: cover;
+	padding-top: 10%;
+	padding-bottom: 5%;
+	color: white !important;
+}
+
+#toronto-paramedics-datastory{
+	background: url(../img/toronto-pixabay-paramedicsvcs.jpg) no-repeat center center;
 	background-size: cover;
 	padding-top: 10%;
 	padding-bottom: 5%;
@@ -181,6 +200,8 @@ a.footer-link, a.footer-link:visited{color: white !important;}
 .padded-bottom-md{padding-bottom: 5%}
 .padded-bottom-sm{padding-bottom: 2%}
 
+.half-width-content{width: 60%;}
+
 .marquee-text{font-size: 2.5em; padding-top: 1.3em;}
 .marquee-text-lg{font-size: 3em; padding-top: 1.3em;}
 .marquee-text-md{font-size: 2.2em; padding-top: 1.3em;}
@@ -194,14 +215,10 @@ a.footer-link, a.footer-link:visited{color: white !important;}
 .light-text{color:white;}
 .vertical-center{padding-top: 5%;}
 
-a.no-underline{
-	color: white !important;
-}
-
-a.no-underline:hover{
-	color: white !important;
+a.no-underline, a.no-underline:hover{
 	text-decoration: none !important;
 }
+
 #menu{
 	color: white;
 	position: absolute;
@@ -267,6 +284,7 @@ li.no-padding-left{padding-left: 0!important;}
 
 td{padding-right:10px; padding-bottom: 3px;}
 
+
 /*TABLESORTER CSS*/
 /* tables */
 table.tablesorter {
@@ -277,12 +295,20 @@ table.tablesorter {
 	width: 100%;
 	text-align: left;
 }
+
+/*FIRST ROW COLOR WHITE*/
+thead, th{
+	color: white !important;
+}
+
 table.tablesorter thead tr th, table.tablesorter tfoot tr th {
-	background-color: #e6EEEE;
+	background-color:#4054B2 ; /*#e6EEEE*/
 	border: 1px solid #FFF;
 	font-size: 8pt;
-	padding: 4px;
+	padding: 5px;
 }
+
+
 table.tablesorter thead tr .header {
 	background-image: url(../themes/blue/bg.gif);
 	background-repeat: no-repeat;
@@ -308,4 +334,37 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 background-color: #8dbdd8;
 }
 
+
+/*MOBILE CHROME: ADDRESS BAR DISAPPEARS ON SCROLL QUICKFIX: https://github.com/google/material-design-lite/issues/1072*/
+.mdl-layout {
+    overflow: visible;
+}
+.mdl-layout__drawer {
+    position: fixed;
+}
+.mdl-layout__content {
+    display: block;
+    overflow: visible;
+    margin-top: 64px;
+}
+.is-small-screen .mdl-layout__content {
+    margin-top: 56px;
+}
+.mdl-layout__header {
+    position: fixed;
+}
+.mdl-layout__obfuscator {
+    position: fixed;
+}
+
+/*MODAL*/
+/*https://stackoverflow.com/questions/29438662/margin-top-of-bootstrap-modal*/
+.modal-dialog {
+    margin: 20vh auto 0px auto
+}
+
+
+
 /*NAVBAR*/
+	/*Section Titles*/
+	.nav-section-title{font-weight: bold; margin-left: 20px;}

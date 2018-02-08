@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Budgetpedia - Supporting informed debate about the Toronto budget</title>
+	<title>Understanding Budget Surpluses and Deficits - Budgetpedia</title>
 	<meta name="description" content="Learn about Budgetpedia">
   	<meta name="keywords" content="Budget, Open Data, Toronto, Canada, Data Visualization, Public Policy">
   	<meta name="author" content="Budgetpedia, Rafi Chaudhury">
