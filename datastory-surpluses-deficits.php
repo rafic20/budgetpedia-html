@@ -46,7 +46,7 @@
 					<div class="heading_subheading_border heading-color">
 						<h1>Surpluses & Deficits</h1>
 						<p>How they're calculated and what they mean for you</p>
-						<p><em>by <strong>Rafi Chaudhury</strong>, Budgetpedia Project Manager</em></p>
+						<p><em>by <strong>Rafi Chaudhury</strong></em></p>
 					</div> <!-- HEADING END -->
 				</div> <!-- COL-12 END -->
 				<div class="col-sm-6 padded-top-sm">

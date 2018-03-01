@@ -43,14 +43,14 @@
 					<div class="heading_subheading_border heading-color">
 						<h1>Toronto Paramedic Services</h1>
 						<p>Understanding its operating capacity and financing </p>
-						<p><em>by <strong>Rafi Chaudhury</strong>, Budgetpedia Project Manager</em></p>
+						<p><em>by <strong>Rafi Chaudhury</strong></em></p>
 					</div> <!-- HEADING END -->
 				</div> <!-- COL-12 END -->
 				<div class="col-sm-6 padded-top-md padded-col-right">
 					<p>
 						Toronto Paramedic Services (TPS) comprise a critical piece of the City’s emergency services, along with the police and fire department. </p>
 
-					<p>According to the <a href="https://www.toronto.ca/wp-content/uploads/2017/11/9172-TPS-2018-Operating_Budget_Notes-v1.pdf">Operating Budget Notes</a> for 2018,  TPS is is responsible for <em>"...providing integrated, mobile, paramedic-based health care and transportation of patients with health emergencies as well as pre-hospital and out-of- hospital medical care to the special needs of vulnerable communities."</em></p>
+					<p>According to the <a href="https://www.toronto.ca/wp-content/uploads/2017/11/9172-TPS-2018-Operating_Budget_Notes-v1.pdf">Operating Budget Notes</a> for 2018,  TPS is responsible for <em>"...providing integrated, mobile, paramedic-based health care and transportation of patients with health emergencies as well as pre-hospital and out-of- hospital medical care to the special needs of vulnerable communities."</em></p>
 
 					<p>Changes in Toronto demographics, namely the growth in the total city population as well as increased numbers of aging residents, have led to a 64% increase in emergency transport cases since 2005, rising from 141,409 in that year to an estimated 231,440 in 2017. </p>
 					</em>
@@ -95,7 +95,7 @@
     
                             <br><br>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">TIP</button> 
-                            <p>Click or tap any bar from 2015 - 2018 to view expenditure categories: Community Paramedicine, Emergency Care and Major Event Mass Casualty Care.</p>
+                            <p>Click or tap any bar from 2015 - 2018 to view the drilldown categories</p>
                 </div> <!-- COL END -->
 			</div> <!-- ROW END -->
 				
@@ -154,7 +154,17 @@
                   <div class="mdl-tabs__panel" id="medical-care-panel">
                     <div class="col-sm-6 padded-top-sm">
                        <p>
-                           The <strong>Emergency Medical Care</strong> service provides emergency and preventative care for Toronto residents through pre-hospital emergency care, inter-facility patient transport services and mass casualty care. Its budget is the largest of all TPS programs. 
+                           The <strong>Emergency Medical Care</strong> service provides emergency and preventative care for Toronto residents through pre-hospital emergency care, inter-facility patient transport services and mass casualty care. Its budget is the largest of all TPS programs; $184.3 million is budgeted for this division in 2018. 
+                       </p>
+
+                       <p>The EMC service comprises three operating areas:
+                         <ul>
+                           <li><strong>Pre-Hospital Emergency Care</strong></li>
+                           <li><strong>Critical Care Transport</strong>: In 2018, TPS estimates 240,700 emergency transports will be required, an average of <strong>659 per day.</strong> This is a 7.5% increase over the <strong>222,538</strong> patient transports that occurred in 2016. </li>
+                           <li><strong>City Emergency & Major Event Mass Casualty Care</strong></li>
+                         </ul>
+
+                        Drilldown data is available for 2018 and 2017. 
                        </p>
                     </div> <!-- COL END -->
                     <div class="col-sm-6">
@@ -165,6 +175,31 @@
                 </div> <!-- COL END -->
 			</div> <!-- ROW END -->
 
+      <div class="row padding-universal padded-top-sm">
+        <div class="col-sm-12">
+          <div class="heading_subheading_border heading-color">
+            <h2>Further Reading</h2>
+            <p>Detailed information available in TPS Annual Reports</p>
+          </div> <!-- HEADING END -->
+        </div> <!-- COL END -->
+      </div> <!-- ROW END -->
+
+      <div class="row padding-universal">
+        <div class="col-sm-10">
+          <p>
+            An excellent source of information about the TPS performance metrics and strategic objectives is their annual reports. Check out the links below to access the full reports.
+
+            <ul>
+              <li>2016 Annual Report: <a href="https://drive.google.com/open?id=1E-0or9tXBWO5mYayb_xG9GOwWwufNSGU">[Google Drive]</a> <a href=
+              "http://torontoparamedicservices.ca/toronto-paramedic-services-2016-annual-report/">[TPS website link]</a></li>
+              <li>2015 Annual Report: <a href="https://drive.google.com/open?id=1TzwMRNRHYwONmc5JU7VIv3TWhpCl-Xfp">[Google Drive]</a> <a href=
+              "http://torontoparamedicservices.ca/toronto-paramedic-services-2015-annual-report/">[TPS website link]</a></li>
+              <li>2014 Annual Report: <a href="https://drive.google.com/open?id=1VIcfl7IF0BaXHCq6uobetrCJNuesMrX6">[Google Drive]</a> <a href=
+              "http://torontoparamedicservices.ca/toronto-paramedic-services-annual-report/">[TPS website link]</a></li>
+            </ul>
+          </p>
+        </div> <!-- COL END -->        
+      </div> <!-- ROW END -->
 
 			<div class="row padding-universal" id="about-the-author">
 					<?php include 'authors/author-rafi.php' ?>

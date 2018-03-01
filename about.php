@@ -70,9 +70,9 @@
 			<div class="col-sm-4 center padded-top-sm">
 				<img class="img-responsive img-circle center-block" src="img/team/rafi-chaudhury.jpg" style="width:50%;"  alt="Rafi Chaudhury image">
 				<h3>Rafi Chaudhury</h3>
-				<p class="position-title"><em><strong>Project Manager & Web Developer</strong></em></p>
+				<p class="position-title"><em><strong>Web Designer</strong></em></p>
 				<a class="center" href="https://www.linkedin.com/in/rafichaudhury/"><img src="img/In-2C-28px-R.png" alt="LinkedIn"></a>
-				<p class="bio">Rafi writes the code for this website and coordinates organizational objectives for the Budgetpedia team. Previously, he was a Product Manager for the mental health app FeelingBetterNow.</p>
+				<p class="bio">Rafi writes the code for this website and coordinates organizational objectives for the Budgetpedia team. Previously, he was a Product Manager for the mental health app <a href="http://feelingbetternow.com/">FeelingBetterNow</a>.</p>
 			</div> <!-- COL-END -->
 
 			<div class="col-sm-4 center padded-top-sm">

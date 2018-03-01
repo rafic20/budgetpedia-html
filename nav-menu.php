@@ -15,11 +15,12 @@
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Budgetpedia</span>
+      <span class="mdl-layout-title"><a href="index.php">Budgetpedia</a></span>
       <nav class="mdl-navigation">
         <span class="nav-section-title">Data Stories</span><br>
         <a class="mdl-navigation__link" href="datastory-surpluses-deficits.php">Surpluses & Deficits Backgrounder</a>
         <a class="mdl-navigation__link" href="datastory-city-staffing.php">Staff Numbers & Salaries</a>
+        <a class="mdl-navigation__link" href="datastory-toronto-paramedic-services.php">Toronto Paramedic Services <span class="new-article">NEW</span></a>
         <br>
         <span class="nav-section-title">Further Exploration</span><br>
         <a class="mdl-navigation__link" href="http://budgetpedia.ca/explorer">Data Explorer (BETA)</a>

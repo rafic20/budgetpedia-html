@@ -27,6 +27,8 @@
 				</ul>
 			</div> --> <!-- COL END -->
 			<div class="col-sm-12">
-				<h4 class="center">Budgetpedia &copy; <?php echo date("Y"); ?></h4>
-				<p class="center author"><em>Site Design: Rafi Chaudhury &copy; <?php echo date("Y"); ?>.<br> All Rights Reserved.</em></p>
+				<h4 class="">Budgetpedia &copy; <?php echo date("Y"); ?></h4>
+				<p class="footer-text"><em>Site Design: <a class="footer-link" href="https://www.linkedin.com/in/rafichaudhury/">Rafi Chaudhury</a> &copy; <?php echo date("Y"); ?>. 
+				<br> Material Design Lite licensed under <a a class="footer-link" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>
+				<br>HighCharts licensed under <a class="footer-link" href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons (CC BY-NC 3.0)</a> 
 			</div> <!-- COL END

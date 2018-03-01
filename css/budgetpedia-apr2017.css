@@ -39,6 +39,7 @@ p.small{font-size: 0.9em;}
 p.small-2{font-size: 1.1em;}
 p.tiny-padding{padding: 1% 0; margin: 1% 0;}
 p.author{color: lightgray; font-size: 1em; padding: 1%;}
+p.footer-text{color: lightgray; font-size: 1em;}
 p.data-story-author{color: gray; font-size: 1.1em; padding: 1%;}
 p.data-citation{color: gray; font-size: 1em; padding: 0.5%; } 
 .navigation-tip-text {background-color: #F9BF3B!important; padding: 2px;}
@@ -368,3 +369,4 @@ background-color: #8dbdd8;
 /*NAVBAR*/
 	/*Section Titles*/
 	.nav-section-title{font-weight: bold; margin-left: 20px;}
+	.new-article{color: rgb(252,68,130); font-weight: bold;}

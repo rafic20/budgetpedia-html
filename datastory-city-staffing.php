@@ -46,7 +46,7 @@
 					<div class="heading_subheading_border heading-color">
 						<h1>The City's Workforce</h1>
 						<p>Staff Numbers and Salary Information for City of Toronto Employees</p>
-						<p><em>by <strong>Rafi Chaudhury</strong>, Budgetpedia Project Manager</em></p>
+						<p><em>by <strong>Rafi Chaudhury</strong></em></p>
 					</div> <!-- HEADING END -->
 				</div> <!-- COL-12 END -->
 			</div> <!-- ROW END -->

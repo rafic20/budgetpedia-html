@@ -78,7 +78,6 @@
 
 
 		
-		//NEXT STEP: Pass value from dropdown/button click to generate array
 		//DEFAULT CHART: Show total expenses;
 		// RADIO BUTTONS FOR SAMPLE SUBCATEGORIES: 
 		//OPTIONS: Show as table 
